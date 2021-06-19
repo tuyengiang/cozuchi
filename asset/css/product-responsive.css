@@ -1,0 +1,231 @@
+/**mobile**/
+@media only screen and (max-width: 380px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    section#banner-header {
+        margin-top: 64px;
+        padding: 50px 0;
+    }
+
+    section#banner-header .banner-text h1 {
+        font-size: 25px;
+    }
+
+    .home-title h3 {
+        font-size: 25px;
+    }
+
+    section#app-information .box-information {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    section#app-information .box-information p {
+        font-size: 15px;
+    }
+
+    #app-service-2 .service-post-list .service-post-body {
+        width: 100%;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    section#app-service-3 .service-table table {
+        width: 100%;
+        overflow: scroll !important;
+        overflow: auto;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    section#detail-header {
+        margin-top: 64px;
+    }
+
+    section#detail-tab .tab-body .tab-wrapper {
+        border-top: 1px solid #f2f2f2;
+    }
+
+    section#detail-tab .tab-body .tab-wrapper ul {
+        display: block;
+        white-space: nowrap;
+        overflow: auto;
+        margin: 0px;
+        overflow-x: auto;
+        padding: 15px 0 !important;
+    }
+
+    section#detail-tab .tab-body .tab-wrapper ul li {
+        display: inline;
+        float: none;
+        margin: 0px !important;
+    }
+
+    section#detail-tab .tab-body .tab-wrapper ul li a {
+        padding: 10px 15px !important;
+        color: #c7c7c7
+    }
+
+    .pdMobile {
+        padding: 0px !important;
+    }
+
+    section#detail-tab .tab-body .tab-wrapper ul li.active a {
+        color: #000;
+    }
+
+    section#detail-tab .tab-body .tab-wrapper ul li a:before {
+        height: 5px;
+        bottom: 0px;
+    }
+
+    .tab-google-map iframe {
+        height: 200px;
+    }
+
+    section#detail-tab .tab-table table tr td:first-child {
+        width: auto !important;
+    }
+
+    footer#footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #app-service-2 .service-post-list .service-post-thumbnail {
+        height: 200px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .product-list .product-item .product-item-thumbnail {
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .product-list .product-item .product-item-body h3 {
+        font-size: 18px;
+    }
+
+    .product-list .product-item .product-item-body p {
+        font-size: 13px;
+    }
+
+    .product-form .product-form-description {
+        margin-bottom: 25px;
+    }
+
+
+    .mobile {
+        display: block;
+    }
+
+    .form-label {
+        font-size: 13px;
+    }
+
+    .product-form .product-form-action {
+        overflow: hidden;
+    }
+
+    .product-form .product-form-action table tr td:nth-child(1n) {
+        width: 30% !important;
+    }
+
+    .product-form .product-form-action table tr td:nth-child(2n) {
+        width: 35% !important;
+    }
+
+    .product-form .product-form-action table tr td:nth-child(3n) {
+        width: 35% !important;
+    }
+
+    .product-form .product-form-action table tr td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .product-form .product-form-action .input-text {
+        width: 60%;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .product-form-action .form-group {
+        display: flex !important;
+    }
+
+    .product-footer .product-footer-item, .product-info .product-price-2 table tr td {
+        font-size: 13px;
+    }
+
+    .product-info .product-price {
+        margin-top: 30px;
+    }
+
+    div#thumb_img img {
+        height: 60px;
+    }
+
+    div#featured_img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .product-table table {
+        width: 100%;
+        overflow: scroll !important;
+        overflow: auto;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #modalPrice .form-group label {
+        font-size: 13px;
+    }
+}
+
+/* iPad landscape style here */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    section#detail-header {
+        margin-top: 64px;
+    }
+
+    section#banner-header {
+        margin-top: 64px;
+        padding: 50px 0;
+    }
+
+    footer#footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* iPad portrait style here */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    section#detail-header {
+        margin-top: 64px;
+    }
+
+    section#banner-header {
+        margin-top: 64px;
+        padding: 50px 0;
+    }
+
+    footer#footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

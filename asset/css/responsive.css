@@ -1,0 +1,165 @@
+/**mobile**/
+@media only screen and (max-width: 380px) {
+    .app_header ul li a {
+        color: #7c7c7c;
+        font-size: 11px !important;
+        padding: 0px 15px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sm_menu_outer.active {
+        opacity: 1;
+        z-index: 99999;
+    }
+
+    /**dashboard**/
+    header#header {
+        height: 120px !important;
+        border-image: none !important;
+        border-bottom: 5px solid #f2f2f2;
+    }
+
+    .app-desktop {
+        display: none !important;
+    }
+
+    .app-mobile {
+        display: block;
+    }
+
+    .app-main {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 150px;
+    }
+
+    select.form-control.tableSelect {
+        width: 100%;
+    }
+
+    .card .card-body {
+        padding: 30px 10px;
+    }
+
+    .align-right {
+        text-align: center;
+    }
+
+    .table-responsive {
+        overflow: hidden;
+    }
+
+    .table-responsive table {
+        width: 100%;
+        overflow: scroll !important;
+        overflow: auto;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .table-text {
+        padding: 10px 0;
+    }
+
+    .table-text h3 {
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    .app_header ul li {
+        float: left;
+        list-style: none;
+        width: calc(100% / 4);
+    }
+
+    .app_header ul li a {
+        color: #7c7c7c;
+        font-size: 15px;
+        padding: 0px 15px;
+        position: relative;
+    }
+
+    .app_header {
+        width: 100%;
+        display: inline-block;
+        margin: 15px 0 0 0;
+        border-top: 1px solid #f2f2f2;
+        padding: 15px 0;
+    }
+
+    .app_header ul li a:before {
+        display: none;
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        height: 5px;
+        background: #e37467;
+        bottom: -18px;
+    }
+
+    .app_header ul li.active a:before, .app_header ul li a:hover:before {
+        display: block;
+    }
+
+    .pc-04-item .pc-04-link {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .pc-04-item .pc-04-link-2 {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .pc-04-item h5 {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .pc-04-item .pc-04-link a {
+        padding: 8px 25px;
+    }
+}
+
+/* iPad landscape style here */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    #sm_menu_ham {
+        display: none;
+    }
+
+    .table-responsive {
+        overflow: hidden;
+    }
+
+    .table-responsive table {
+        width: 100%;
+        overflow: scroll !important;
+        overflow: auto;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* iPad portrait style here */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    #sm_menu_ham {
+        display: none;
+    }
+
+    .table-responsive {
+        overflow: hidden;
+    }
+
+    .table-responsive table {
+        width: 100%;
+        overflow: scroll !important;
+        overflow: auto;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

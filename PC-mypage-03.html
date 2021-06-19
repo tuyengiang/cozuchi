@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="vendor/owl/dist/assets/owl.carousel.css">
     <!--main-css-->
     <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="stylesheet" href="css/mobilemenu.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--responsive-css-->
     <link rel="stylesheet" href="asset/css/responsive.css">
     <!--jquery-->
@@ -21,16 +23,116 @@
     <script src="vendor/bootstrap/bootstrap.min.js"></script>
     <!--owl-slide-->
     <script src="vendor/owl/dist/owl.carousel.js"></script>
+    <!--jquery-menu-->
+    <script src="js/jquery-simple-mobilemenu.min.js"></script>
+    <!-- Source: https://www.jssor.com/dinhkhamhubt/banner-slider.slider/=edit -->
+    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
     <!--main-js-->
+    <script src="js/style.js"></script>
     <script src="asset/js/main.js"></script>
 
 </head>
 <body>
+<header id="header" class="header app-mobile">
+    <div class="header__desktop hidden1024">
+        <div class="header__desktop--box">
+            <h1 id="logo">Cozuchi
+                <a title="Cozuchi" class="navbar-brand" href="#">
+                    <img alt="Cozuchi" src="images/logo.png" class="img100">
+                </a>
+            </h1>
+            <div class="menu_box d-flex">
+                <nav class="main__menu" id="main__menu">
+                    <ul class="main__menu--list list_style_none">
+                        <li class="item active"><a class="navigation__link" href="#" title="COZUCHIとは">COZUCHIとは</a>
+                        </li>
+                        <li class="item position-relative subMenu">
+                            <a class="" data-toggle="dropdown" href="javascript:void(0);" title="サービスについて">サービスについて
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown_list_item">
+                                <ul class="nav nav-pills ">
+                                    <li>
+                                        <a class="navigation__link" href="#" title="COZUCHI の仕組み">COZUCHI の仕組み</a>
+                                    </li>
+                                    <li>
+                                        <a class="navigation__link" href="#" title="安心・安全な投資の取り組み">安心・安全な投資の取り組み</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </li>
+                        <li class="item"><a class="navigation__link" href="#" title="プロジェクト一覧">プロジェクト一覧</a>
+                        </li>
+                        <li class="item"><a class="navigation__link" href="" title="NEWS">NEWS</a>
+                        </li>
+                        <li class="item"><a class="navigation__link" href="" title="FAQ">FAQ</a></li>
+                        <li class="item"><a class="navigation__link" href="" title="お問い合わせ">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="log_box">
+                    <a href="#" class="btn btn_signin bgc_main" title="会員登録">会員登録</a>
+                    <a href="#" class="btn btn_login bgc_000" title="ログイン">ログイン</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="header__mobile block1024" style="display: none;">
+        <div class="logo-port">
+            <p>
+                <a href="#" title="PageName">
+                    <img class="img-responsive img100" alt="PageName" src="images/logo.png" />
+                </a>
+            </p>
+        </div>
+        <ul class="main__menu--list list_style_none mobile_menu">
+            <li class="item active"><a class="navigation__link" href="#" title="COZUCHIとは">COZUCHIとは</a>
+            </li>
+            <li class="item relative">
+                <a class="" data-toggle="dropdown" href="javascript:void(0);" title="サービスについて">サービスについて
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="navigation__link" href="#" title="COZUCHI の仕組み">COZUCHI の仕組み</a>
+                    </li>
+                    <li>
+                        <a class="navigation__link" href="#" title="安心・安全な投資の取り組み">安心・安全な投資の取り組み</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item"><a class="navigation__link" href="#" title="プロジェクト一覧">プロジェクト一覧</a>
+            </li>
+            <li class="item"><a class="navigation__link" href="" title="NEWS">NEWS</a>
+            </li>
+            <li class="item"><a class="navigation__link" href="" title="FAQ">FAQ</a></li>
+            <li class="item"><a class="navigation__link" href="" title="お問い合わせ">お問い合わせ</a>
+            </li>
+        </ul>
+    </div>
+    <div class="app_header app-mobile">
+        <ul>
+            <li>
+                <a href="PC-mypage-01.html">資産状況</a>
+            </li>
+            <li>
+                <a href="PC-mypage-02.html">運用状況</a>
+            </li>
+            <li class="active">
+                <a href="PC-mypage-03.html">取引履歴</a>
+            </li>
+            <li>
+                <a href="Pc-mypage-04.html">会員情報</a>
+            </li>
+        </ul>
+    </div><!--menu-app-mobile-->
+</header><!--header-mobile-->
 <main id="main">
     <div class="container-fluid pd-lf pd-rgt">
         <div class="row row-0">
-            <div class="app-sidebar stick">
-                <header id="sidebar-header">
+            <div class="app-sidebar stick app-desktop">
+                <div id="sidebar-header">
                     <div id="logo">
                         <a href=""><img src="asset/images/logo.png" alt=""></a>
                     </div>
@@ -38,7 +140,7 @@
                         <h4>ユーザー名ユーザー名</h4>
                         <div class="btn-account"><a href="#">ログアウト</a></div>
                     </div>
-                </header><!--header-->
+                </div><!--header-->
                 <div class="app-menu">
                     <nav class="app-menu-container">
                         <ul>
