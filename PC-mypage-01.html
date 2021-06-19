@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="vendor/owl/dist/assets/owl.carousel.css">
     <!--main-css-->
     <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="stylesheet" href="css/mobilemenu.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--responsive-css-->
     <link rel="stylesheet" href="asset/css/responsive.css">
     <!--jquery-->
@@ -21,43 +23,144 @@
     <script src="vendor/bootstrap/bootstrap.min.js"></script>
     <!--owl-slide-->
     <script src="vendor/owl/dist/owl.carousel.js"></script>
+    <!--jquery-menu-->
+    <script src="js/jquery-simple-mobilemenu.min.js"></script>
+    <!-- Source: https://www.jssor.com/dinhkhamhubt/banner-slider.slider/=edit -->
+    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
     <!--main-js-->
+    <script src="js/style.js"></script>
     <script src="asset/js/main.js"></script>
 
 </head>
 <body>
-<main id="main">
-    <div class="container-fluid pd-lf pd-rgt">
-        <div class="row row-0">
-            <div class="app-sidebar stick">
-            <header id="sidebar-header">
-                <div id="logo">
-                    <a href=""><img src="asset/images/logo.png" alt=""></a>
-                </div>
-                <div class="header-account">
-                    <h4>ユーザー名ユーザー名</h4>
-                    <div class="btn-account"><a href="#">ログアウト</a></div>
-                </div>
-            </header><!--header-->
-            <div class="app-menu">
-                <nav class="app-menu-container">
-                    <ul>
-                        <li class="active">
-                            <a href="PC-mypage-01.html">資産状況</a>
+<header id="header" class="header app-mobile">
+    <div class="header__desktop hidden1024">
+        <div class="header__desktop--box">
+            <h1 id="logo">Cozuchi
+                <a title="Cozuchi" class="navbar-brand" href="#">
+                    <img alt="Cozuchi" src="images/logo.png" class="img100">
+                </a>
+            </h1>
+            <div class="menu_box d-flex">
+                <nav class="main__menu" id="main__menu">
+                    <ul class="main__menu--list list_style_none">
+                        <li class="item active"><a class="navigation__link" href="#" title="COZUCHIとは">COZUCHIとは</a>
                         </li>
-                        <li>
-                            <a href="PC-mypage-02.html">運用状況</a>
+                        <li class="item position-relative subMenu">
+                            <a class="" data-toggle="dropdown" href="javascript:void(0);" title="サービスについて">サービスについて
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown_list_item">
+                                <ul class="nav nav-pills ">
+                                    <li>
+                                        <a class="navigation__link" href="#" title="COZUCHI の仕組み">COZUCHI の仕組み</a>
+                                    </li>
+                                    <li>
+                                        <a class="navigation__link" href="#" title="安心・安全な投資の取り組み">安心・安全な投資の取り組み</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
                         </li>
-                        <li>
-                            <a href="PC-mypage-03.html">取引履歴</a>
+                        <li class="item"><a class="navigation__link" href="#" title="プロジェクト一覧">プロジェクト一覧</a>
                         </li>
-                        <li>
-                            <a href="Pc-mypage-04.html">会員情報</a>
+                        <li class="item"><a class="navigation__link" href="" title="NEWS">NEWS</a>
+                        </li>
+                        <li class="item"><a class="navigation__link" href="" title="FAQ">FAQ</a></li>
+                        <li class="item"><a class="navigation__link" href="" title="お問い合わせ">お問い合わせ</a>
                         </li>
                     </ul>
                 </nav>
+                <div class="log_box">
+                    <a href="#" class="btn btn_signin bgc_main" title="会員登録">会員登録</a>
+                    <a href="#" class="btn btn_login bgc_000" title="ログイン">ログイン</a>
+                </div>
             </div>
-        </div><!--app-sidebar-->
+
+        </div>
+    </div>
+    <div class="header__mobile block1024" style="display: none;">
+        <div class="logo-port">
+            <p>
+                <a href="#" title="PageName">
+                    <img class="img-responsive img100" alt="PageName" src="images/logo.png"/>
+                </a>
+            </p>
+        </div>
+        <ul class="main__menu--list list_style_none mobile_menu">
+            <li class="item active"><a class="navigation__link" href="#" title="COZUCHIとは">COZUCHIとは</a>
+            </li>
+            <li class="item relative">
+                <a class="" data-toggle="dropdown" href="javascript:void(0);" title="サービスについて">サービスについて
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a class="navigation__link" href="#" title="COZUCHI の仕組み">COZUCHI の仕組み</a>
+                    </li>
+                    <li>
+                        <a class="navigation__link" href="#" title="安心・安全な投資の取り組み">安心・安全な投資の取り組み</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item"><a class="navigation__link" href="#" title="プロジェクト一覧">プロジェクト一覧</a>
+            </li>
+            <li class="item"><a class="navigation__link" href="" title="NEWS">NEWS</a>
+            </li>
+            <li class="item"><a class="navigation__link" href="" title="FAQ">FAQ</a></li>
+            <li class="item"><a class="navigation__link" href="" title="お問い合わせ">お問い合わせ</a>
+            </li>
+        </ul>
+    </div>
+    <div class="app_header app-mobile">
+        <ul>
+            <li class="active">
+                <a href="PC-mypage-01.html">資産状況</a>
+            </li>
+            <li>
+                <a href="PC-mypage-02.html">運用状況</a>
+            </li>
+            <li>
+                <a href="PC-mypage-03.html">取引履歴</a>
+            </li>
+            <li>
+                <a href="Pc-mypage-04.html">会員情報</a>
+            </li>
+        </ul>
+    </div><!--menu-app-mobile-->
+</header><!--header-mobile-->
+
+<main id="main">
+    <div class="container-fluid pd-lf pd-rgt">
+        <div class="row row-0">
+            <div class="app-sidebar stick app-desktop">
+                <div id="sidebar-header">
+                    <div id="logo">
+                        <a href=""><img src="asset/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="header-account">
+                        <h4>ユーザー名ユーザー名</h4>
+                        <div class="btn-account"><a href="#">ログアウト</a></div>
+                    </div>
+                </div><!--header-->
+                <div class="app-menu">
+                    <nav class="app-menu-container">
+                        <ul>
+                            <li class="active">
+                                <a href="PC-mypage-01.html">資産状況</a>
+                            </li>
+                            <li>
+                                <a href="PC-mypage-02.html">運用状況</a>
+                            </li>
+                            <li>
+                                <a href="PC-mypage-03.html">取引履歴</a>
+                            </li>
+                            <li>
+                                <a href="Pc-mypage-04.html">会員情報</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!--app-sidebar-->
             <div class="app-main">
                 <div class="navbar header-main">
                     <div class="align-right">
@@ -99,10 +202,10 @@
                     <div class="card-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-12 col-lg-6 col-xl-6">
+                                <div class="col-6 col-lg-6 col-xl-6">
                                     <div class="table-text"><h3>投資収益レポート（月</h3></div>
                                 </div>
-                                <div class="col-12 col-lg-6 col-xl-6">
+                                <div class="col-6 col-lg-6 col-xl-6">
                                     <div class="table-select">
                                         <select class="form-control tableSelect">
                                             <option value="">2021 年</option>
@@ -203,10 +306,10 @@
                     <div class="card-body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-12 col-lg-6 col-xl-6">
+                                <div class="col-6 col-lg-6 col-xl-6">
                                     <div class="table-text"><h3>投資収益レポート（月</h3></div>
                                 </div>
-                                <div class="col-12 col-lg-6 col-xl-6">
+                                <div class="col-6 col-lg-6 col-xl-6">
                                     <div class="table-select">
                                         <select class="form-control tableSelect">
                                             <option value="">2021 年</option>
@@ -302,6 +405,327 @@
                         </div>
                     </div>
                 </div><!--table-2¬-->
+
+                <div class="card card-bg">
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="owl-carousel owl-carousel-cozuchi owl-carousel-project">
+                                        <div class="item_project">
+                                            <div class="photo position-relative">
+                                                <div class="status_item red">
+                                                    募集中
+                                                </div>
+                                                <a href="" title="" class="">
+                                                    <img src="./images/project_1.jpg" width="360" height="245" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="item_body">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="category">
+                                                        <a class="color_000" href="" title="田端 EXITファンドⅠ">
+                                                            田端 EXITファンドⅠ
+                                                        </a>
+                                                    </div>
+                                                    <div class="type_item red">
+                                                        <img src="./images/type_red.png" width="19" height="17" alt=""
+                                                             class="icon">
+                                                        <span>キャピタルゲイン型</span>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title_item size16">
+                                                    <a href="" title="" class="">
+                                                        <!-- 【会員限定】 -->
+                                                        先行募集が満額終了！インカムゲイン2.5% + キャピタルゲイン6.5%
+                                                    </a>
+                                                </h3>
+                                                <div class="item_infor">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="">
+                                                            応募金額
+                                                        </div>
+                                                        <div class="total size32">
+                                                            10,000,000 <span class="size14">円</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                            class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
+                                                        <div class="">
+                                                            募集金額
+                                                        </div>
+                                                        <div class="total size18">
+                                                            10,000,000 <span class="size12">円</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between date_box">
+                                                        <div class="">
+                                                            募集期間
+                                                        </div>
+                                                        <div class="total size14 d-flex">
+                                                            <div class="tag red">先着</div>
+                                                            <span class="size18 font-weight-bold">5/20
+                                                    -
+                                                    5/21</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between pt-1">
+                                                        <div class="chart_box">
+                                                            <div class="chart"></div>
+                                                        </div>
+                                                        <div class="note_chart">
+                                                            <p class="d-flex align-items-center justify-content-between">
+                                                                <span class="title_span">想定利回り （年利）</span>
+                                                                <span class="size36">12 <span
+                                                                        class="size18">%</span></span>
+                                                            </p>
+                                                            <p class="d-flex align-items-center justify-content-between mb-0">
+                                                                <span class="title_span">運用期間</span>
+                                                                <span class="size36">19 <span
+                                                                        class="size18">ヶ月</span></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item_project">
+                                            <div class="photo position-relative">
+                                                <div class="status_item mint_green">
+                                                    募集中
+                                                </div>
+                                                <a href="" title="" class="">
+                                                    <img src="./images/project_2.jpg" width="360" height="245" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="item_body">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="category">
+                                                        <a class="color_000" href="" title="田端 EXITファンドⅠ">
+                                                            田端 EXITファンドⅠ
+                                                        </a>
+                                                    </div>
+                                                    <div class="type_item blue">
+                                                        <img src="./images/type_blue.png" width="19" height="17" alt=""
+                                                             class="icon">
+                                                        <span>キャピタルゲイン型</span>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title_item size16">
+                                                    <a href="" title="" class="">
+                                                        <!-- 【会員限定】 -->
+                                                        先行募集が満額終了！インカムゲイン2.5% + キャピタルゲイン6.5%
+                                                    </a>
+                                                </h3>
+                                                <div class="item_infor">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="">
+                                                            応募金額
+                                                        </div>
+                                                        <div class="total size32">
+                                                            10,000,000 <span class="size14">円</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                            class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
+                                                        <div class="">
+                                                            募集金額
+                                                        </div>
+                                                        <div class="total size18">
+                                                            10,000,000 <span class="size12">円</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between date_box">
+                                                        <div class="">
+                                                            募集期間
+                                                        </div>
+                                                        <div class="total size14 d-flex">
+                                                            <div class="tag blue">先着</div>
+                                                            <span
+                                                                    class="size18 font-weight-bold">5/20 -
+                                                    5/21</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between pt-1">
+                                                        <div class="chart_box">
+                                                            <div class="chart"></div>
+                                                        </div>
+                                                        <div class="note_chart">
+                                                            <p class="d-flex align-items-center justify-content-between">
+                                                                <span class="title_span">想定利回り （年利）</span>
+                                                                <span class="size36">12 <span
+                                                                        class="size18">%</span></span>
+                                                            </p>
+                                                            <p class="d-flex align-items-center justify-content-between mb-0">
+                                                                <span class="title_span">運用期間</span>
+                                                                <span class="size36">19 <span
+                                                                        class="size18">ヶ月</span></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item_project">
+                                            <div class="photo position-relative">
+                                                <div class="status_item grey">
+                                                    募集中
+                                                </div>
+                                                <a href="" title="" class="">
+                                                    <img src="./images/project_3.jpg" width="360" height="245" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="item_body">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="category">
+                                                        <a class="color_000" href="" title="田端 EXITファンドⅠ">
+                                                            田端 EXITファンドⅠ
+                                                        </a>
+                                                    </div>
+                                                    <div class="type_item blue">
+                                                        <img src="./images/type_blue.png" width="19" height="17" alt=""
+                                                             class="icon">
+                                                        <span>キャピタルゲイン型</span>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title_item size16">
+                                                    <a href="" title="" class="">
+                                                        <!-- 【会員限定】 -->
+                                                        先行募集が満額終了！インカムゲイン2.5% + キャピタルゲイン6.5%
+                                                    </a>
+                                                </h3>
+                                                <div class="item_infor">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="">
+                                                            応募金額
+                                                        </div>
+                                                        <div class="total size32">
+                                                            10,000,000 <span class="size14">円</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                            class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
+                                                        <div class="">
+                                                            募集金額
+                                                        </div>
+                                                        <div class="total size18">
+                                                            10,000,000 <span class="size12">円</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between date_box">
+                                                        <div class="">
+                                                            募集期間
+                                                        </div>
+                                                        <div class="total size14 d-flex">
+                                                            <div class="tag blue">先着</div>
+                                                            <span
+                                                                    class="size18 font-weight-bold">5/20 -
+                                                    5/21</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between pt-1">
+                                                        <div class="chart_box">
+                                                            <div class="chart"></div>
+                                                        </div>
+                                                        <div class="note_chart">
+                                                            <p class="d-flex align-items-center justify-content-between">
+                                                                <span class="title_span">想定利回り （年利）</span>
+                                                                <span class="size36">12 <span
+                                                                        class="size18">%</span></span>
+                                                            </p>
+                                                            <p class="d-flex align-items-center justify-content-between mb-0">
+                                                                <span class="title_span">運用期間</span>
+                                                                <span class="size36">19 <span
+                                                                        class="size18">ヶ月</span></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item_project">
+                                            <div class="photo position-relative">
+                                                <div class="status_item red">
+                                                    募集中
+                                                </div>
+                                                <a href="" title="" class="">
+                                                    <img src="./images/project_2.jpg" width="360" height="245" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="item_body">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="category">
+                                                        <a class="color_000" href="" title="田端 EXITファンドⅠ">
+                                                            田端 EXITファンドⅠ
+                                                        </a>
+                                                    </div>
+                                                    <div class="type_item blue">
+                                                        <img src="./images/type_blue.png" width="19" height="17" alt=""
+                                                             class="icon">
+                                                        <span>キャピタルゲイン型</span>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title_item size16">
+                                                    <a href="" title="" class="">
+                                                        <!-- 【会員限定】 -->
+                                                        先行募集が満額終了！インカムゲイン2.5% + キャピタルゲイン6.5%
+                                                    </a>
+                                                </h3>
+                                                <div class="item_infor">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="">
+                                                            応募金額
+                                                        </div>
+                                                        <div class="total size32">
+                                                            10,000,000 <span class="size14">円</span>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                            class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
+                                                        <div class="">
+                                                            募集金額
+                                                        </div>
+                                                        <div class="total size18">
+                                                            10,000,000 <span class="size12">円</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between date_box">
+                                                        <div class="">
+                                                            募集期間
+                                                        </div>
+                                                        <div class="total size14 d-flex">
+                                                            <div class="tag blue">先着</div>
+                                                            <span
+                                                                    class="size18 font-weight-bold">5/20 -
+                                                    5/21</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between pt-1">
+                                                        <div class="chart_box">
+                                                            <div class="chart"></div>
+                                                        </div>
+                                                        <div class="note_chart">
+                                                            <p class="d-flex align-items-center justify-content-between">
+                                                                <span class="title_span">想定利回り （年利）</span>
+                                                                <span class="size36">12 <span
+                                                                        class="size18">%</span></span>
+                                                            </p>
+                                                            <p class="d-flex align-items-center justify-content-between mb-0">
+                                                                <span class="title_span">運用期間</span>
+                                                                <span class="size36">19 <span
+                                                                        class="size18">ヶ月</span></span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

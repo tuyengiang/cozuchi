@@ -84,6 +84,14 @@ a {
     margin-left: 285px;
 }
 
+.app-mobile {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
 /**app-sidebar**/
 .app-sidebar {
     width: 100%;
@@ -94,41 +102,45 @@ a {
     border-right: 1px solid #f2f2f2;
 }
 
-.app-sidebar header#sidebar-header {
+.app-sidebar #sidebar-header {
     width: 100%;
     display: inline-block;
     padding: 40px 30px;
 }
 
-header#sidebar-header div#logo {
+#sidebar-header div#logo {
     text-align: center;
+    width: 100%;
+    height: auto !important;
+    text-indent: 1% !important;
+    float: none !important;
 }
 
-header#sidebar-header div#logo img {
+#sidebar-header div#logo img {
     max-width: 150px;
     margin: auto;
     display: inline-block;
 }
 
-header#sidebar-header .header-account {
+#sidebar-header .header-account {
     width: 100%;
     margin: 30px 0 20px 0;
 }
 
-header#sidebar-header .header-account h4 {
+#sidebar-header .header-account h4 {
     font-size: 16px;
     text-align: center;
     font-family: "NotoSansJP-Regular", sans-serif;
 }
 
-header#sidebar-header .header-account .btn-account {
+#sidebar-header .header-account .btn-account {
     text-align: center;
     width: 100%;
     display: inline-block;
     margin-top: 20px;
 }
 
-header#sidebar-header .header-account .btn-account a {
+#sidebar-header .header-account .btn-account a {
     background: #000000;
     padding: 10px 25px;
     border-radius: 50px;
@@ -138,7 +150,7 @@ header#sidebar-header .header-account .btn-account a {
     border: 2px solid #000000;
 }
 
-header#sidebar-header .header-account .btn-account a:hover {
+#sidebar-header .header-account .btn-account a:hover {
     transition: 0.3s ease-in-out;
     background: #fff;
     color: #000000;
@@ -262,6 +274,7 @@ span.ch-left.small-right {
 .table-text h3 {
     font-weight: 700;
     font-size: 20px;
+    margin: 0px;
 }
 
 select.form-control.tableSelect {
