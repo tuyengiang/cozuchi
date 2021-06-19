@@ -1,0 +1,402 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-color: #e37467;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    src: url("../fonts/NotoSansJP-Bold.otf");
+    font-family: "NotoSansJP-Bold", sans-serif;
+}
+
+@font-face {
+    src: url("../fonts/NotoSansJP-Light.otf");
+    font-family: "NotoSansJP-Light", sans-serif;
+}
+
+@font-face {
+    src: url("../fonts/NotoSansJP-Medium.otf");
+    font-family: "NotoSansJP-Medium", sans-serif;
+}
+
+@font-face {
+    src: url("../fonts/NotoSansJP-Regular.otf");
+    font-family: "NotoSansJP-Regular", sans-serif;
+}
+
+body {
+    font-family: "NotoSansJP-Regular", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "NotoSansJP-Bold", sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.pd-lf {
+    padding-left: 0px !important;
+}
+
+.pd-rgt {
+    padding-right: 0px !important;
+}
+
+.row-0 {
+    padding: 0px 15px !important;
+}
+
+.pd-0 {
+    padding: 0px !important;
+}
+
+.position {
+    position: relative;
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 285px !important;
+    max-height: 100%;
+    z-index: 1000;
+    background: #fff !important;
+    -webkit-box-shadow: 0 8px 24px #e5e4e6;
+    box-shadow: 0 8px 24px #e5e4e6;
+    -webkit-transition: left 0.3s ease, width 0.3s ease;
+    -o-transition: left 0.3s ease, width 0.3s ease;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.app-main {
+    width: calc(100% - 285px);
+    margin-left: 285px;
+}
+
+/**app-sidebar**/
+.app-sidebar {
+    width: 100%;
+    display: inline-block;
+    height: 100vh;
+    -webkit-box-shadow: 0 8px 24px #e5e4e6;
+    box-shadow: 0 8px 24px #e5e4e6;
+    border-right: 1px solid #f2f2f2;
+}
+
+.app-sidebar header#sidebar-header {
+    width: 100%;
+    display: inline-block;
+    padding: 40px 30px;
+}
+
+header#sidebar-header div#logo {
+    text-align: center;
+}
+
+header#sidebar-header div#logo img {
+    max-width: 150px;
+    margin: auto;
+    display: inline-block;
+}
+
+header#sidebar-header .header-account {
+    width: 100%;
+    margin: 30px 0 20px 0;
+}
+
+header#sidebar-header .header-account h4 {
+    font-size: 16px;
+    text-align: center;
+    font-family: "NotoSansJP-Regular", sans-serif;
+}
+
+header#sidebar-header .header-account .btn-account {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+header#sidebar-header .header-account .btn-account a {
+    background: #000000;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    border: 2px solid #000000;
+}
+
+header#sidebar-header .header-account .btn-account a:hover {
+    transition: 0.3s ease-in-out;
+    background: #fff;
+    color: #000000;
+}
+
+.app-sidebar .app-menu {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.app-sidebar .app-menu nav.app-menu-container ul li {
+    border-top: 1px solid #f2f2f2;
+}
+
+.app-sidebar .app-menu nav.app-menu-container ul li a {
+    width: 100%;
+    display: block;
+    padding: 10px 30px;
+    color: #333;
+    font-family: "NotoSansJP-Regular", sans-serif;
+    font-size: 15px;
+}
+
+.app-sidebar .app-menu nav.app-menu-container ul li a:hover, .app-sidebar .app-menu nav.app-menu-container ul li.active a {
+    color: var(--primary-color);
+}
+
+.app-sidebar .app-menu nav.app-menu-container ul li:last-child a {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+/**bodymain**/
+.navbar.header-main {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-color);
+    display: inline-block;
+}
+
+.align-right {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+}
+
+.navbar-account a {
+    color: #fff;
+    font-family: "NotoSansJP-Regular", sans-serif;
+    font-size: 16px;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #f2f2f2 !important;
+}
+
+/**card**/
+.card {
+    width: 100%;
+    border-radius: 0px !important;
+    border: 0px;
+    display: inherit;
+}
+
+.card .card-body {
+    width: 100%;
+    display: inline-block;
+    padding: 30px;
+}
+
+/**chart**/
+.chart-list {
+    width: 100%;
+    display: inline-block;
+}
+
+.chart-item {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 15px 0;
+}
+
+.chart-item span {
+    width: calc(100% / 2);
+    display: inline-block;
+}
+
+.chart-item span.ch-left {
+    float: left;
+    text-align: left;
+    font-family: "NotoSansJP-Regular", sans-serif;
+    font-size: 16px;
+}
+
+.chart-item span.ch-right {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: right;
+    font-family: "NotoSansJP-Bold", sans-serif;
+}
+
+span.ch-left.small {
+    margin-top: 20px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+span.ch-left.small-right {
+    margin-top: 20px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+/**Table**/
+.table-text {
+    width: 100%;
+    display: inline-block;
+}
+
+.table-text h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+select.form-control.tableSelect {
+    width: 200px;
+    float: right;
+}
+
+.table-responsive {
+    width: 100%;
+    display: inline-block;
+    margin: 20px 0 20px 0;
+}
+
+.table-responsive table {
+    width: 100%;
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+
+.table-responsive tr {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.table-responsive tr td, .table-responsive thead th {
+    padding: 10px 15px;
+    text-align: center;
+    font-family: "NotoSansJP-Regular", sans-serif;
+    font-size: 15px;
+}
+
+.table-responsive tr:last-child {
+    border-bottom: 0px !important;
+}
+
+.table-footer {
+    font-size: 13px;
+}
+
+.table-link {
+    width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.table-link a {
+    background: var(--primary-color);
+    padding: 15px 50px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+
+.table-link a:hover {
+    transition: 0.3s ease-in-out;
+    background: #fff;
+    color: var(--primary-color);
+}
+
+.table-select.select-2 {
+    margin-bottom: 20px;
+}
+
+.table-select.select-2 select {
+    width: 100%;
+    float: none;
+}
+
+/**pc-04**/
+.pc-04-title {
+    padding-bottom: 30px;
+}
+
+.pc-04-title h3 {
+    width: 100%;
+    font-size: 20px;
+}
+
+.pc-04-item {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    padding: 20px 0;
+    flex-flow: column;
+}
+
+.pc-04-item h5 {
+    font-size: 15px;
+}
+
+.pc-04-item .pc-04-link a {
+    background: #ffeae8;
+    padding: 8px 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: var(--primary-color)
+}
+
+.pc-04-item .pc-04-link {
+    text-align: right;
+}
+
+.pc-04-item .pc-04-link-2 {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.pc-04-item .pc-04-link-2 a {
+    font-size: 12px;
+    color: var(--primary-color);
+    text-decoration: underline !important;
+}
+
+/**pc-table**/
+.card-bg {
+    background: #f8f8f8;
+}
+
+.table-title-2 h3 {
+    font-size: 18px;
+    margin: 0px !important;
+}
+
+.table-title-2 {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.table-4 tr td:nth-child(1n) {
+    max-width: 10% !important;
+}
+
+.table-4 tr td {
+    text-align: left;
+}

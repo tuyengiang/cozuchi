@@ -1,0 +1,453 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-color: #e37467;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    src: url("../fonts/NotoSansJP-Bold.otf");
+    font-family: "NotoSansJP-Bold", sans-serif;
+}
+
+@font-face {
+    src: url("../fonts/NotoSansJP-Light.otf");
+    font-family: "NotoSansJP-Light", sans-serif;
+}
+
+@font-face {
+    src: url("../fonts/NotoSansJP-Medium.otf");
+    font-family: "NotoSansJP-Medium", sans-serif;
+}
+
+@font-face {
+    src: url("../fonts/NotoSansJP-Regular.otf");
+    font-family: "NotoSansJP-Regular", sans-serif;
+}
+
+body {
+    font-family: "NotoSansJP-Regular", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "NotoSansJP-Bold", sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pd-lf {
+    padding-left: 0px !important;
+}
+
+.pd-rgt {
+    padding-right: 0px !important;
+}
+
+.row-0 {
+    padding: 0px 15px !important;
+}
+
+.pd-0 {
+    padding: 0px !important;
+}
+
+main#main-wrapper {
+    width: 100%;
+    display: inline-block;
+}
+
+/**banner**/
+section#banner-header {
+    background: url("../images/banner.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display: inherit;
+    padding: 50px 0;
+}
+
+section#banner-header .banner-text {
+    text-align: center;
+}
+
+section#banner-header .banner-text h1 {
+    font-size: 36px;
+    font-family: "NotoSansJP-Bold", sans-serif;
+    font-weight: 700;
+    margin: 0px;
+}
+
+/**title**/
+.home-title {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home-title h3 {
+    font-family: "NotoSansJP-Medium", sans-serif;
+    font-size: 32px;
+    color: #000;
+
+}
+
+.red {
+    color: var(--primary-color) !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+/**app-information**/
+section#app-information {
+    width: 100%;
+    display: inline-block;
+    padding: 50px 0 50px 0;
+}
+
+section#app-information .box-information {
+    width: 100%;
+    margin-top: 30px;
+}
+
+section#app-information .box-information p {
+    font-size: 18px;
+    font-family: "NotoSansJP-Regular", sans-serif;
+    text-align: justify;
+}
+
+section#app-information .box-information img {
+    height: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+section#app-information .box-information .information-image {
+    text-align: center;
+}
+
+/**app-service**/
+#app-service {
+    width: 100%;
+    background: var(--primary-color);
+    padding: 50px 0;
+    display: inline-block;
+}
+
+#app-service .service-list {
+    width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#app-service .service-list .box-service {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+#app-service .service-list .box-service:hover {
+    transition: 0.3s ease-in-out;
+    -webkit-box-shadow: 0 8px 24px #e5e4e6;
+    box-shadow: 0 8px 24px #e5e4e6;
+}
+
+#app-service .service-list .box-service .service-title {
+    text-align: center;
+}
+
+#app-service .service-list .box-service .service-title h3 {
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    font-weight: 700 !important;
+    font-family: "NotoSansJP-Regular", sans-serif;
+}
+
+#app-service .service-list .box-service .service-title h3:before {
+    content: '';
+    background: url(../images/service/line.png) no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 80px;
+    left: 0px;
+    background-size: 100%;
+    top: 100%;
+}
+
+
+#app-service .service-list .box-service .service-thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+#app-service .service-list .box-service .service-thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#app-service .service-list .box-service .service-content {
+    font-size: 14px;
+    color: #333;
+    font-family: "NotoSansJP-Regular", sans-serif;
+    height: 60px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/**app-service-2**/
+#app-service-2 {
+    width: 100%;
+    padding: 50px 0;
+    display: inline-block;
+}
+
+#app-service-2 .service-post-list {
+    width: 100%;
+    display: inherit;
+    margin: 50px 0 0 0;
+}
+
+#app-service-2 .service-post-list .service-post-body {
+    width: 80%;
+}
+
+#app-service-2 .service-post-list .service-post-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#app-service-2 .service-post-list .service-post-body p {
+    font-family: "NotoSansJP-Light", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#app-service-2 .service-post-list .service-post-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+/**app-service03**/
+section#app-service-3 {
+    width: 100%;
+    display: inline-block;
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+
+section#app-service-3 .service-3-text {
+    width: 100%;
+    margin: 20px 0 0 0;
+    font-family: "NotoSansJP-Light", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+section#app-service-3 .service-table {
+    width: 100%;
+    margin: 30px 0 0 0;
+    border: 3px solid #000;
+    background: #fff;
+    border-radius: 8px !important;
+}
+
+section#app-service-3 .service-table table {
+    width: 100%;
+}
+
+section#app-service-3 .service-table table tr td {
+    padding: 10px 15px;
+    font-size: 15px;
+    border-bottom: 1px solid #000;
+}
+
+section#app-service-3 .service-table table tr:last-child td {
+    border-bottom: 0px !important;
+}
+
+section#app-service-3 .service-table table tr td:not(:last-child) {
+    border-right: 1px solid #000;
+}
+
+section#app-service-3 .service-table table tr:nth-child(1) td {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section#app-service-3 .service-table table tr td:first-child {
+    font-weight: 700;
+}
+
+.btnRed {
+    width: 100%;
+    display: inline-block;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.btn-cus a {
+    background: #ffeae8;
+    padding: 8px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+/**detail-4**/
+section#detail-header {
+    width: 100%;
+    padding: 40px 0;
+    position: relative;
+}
+
+section#detail-header .detail-header-body {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+section#detail-header .detail-header-body p {
+    font-size: 16px;
+}
+
+section#detail-header .detail-header-body h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+section#detail-header .detail-header-body .detailBtn {
+    background: #0ca497;
+    text-align: center;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+section#detail-tab {
+    width: 100%;
+    display: inline-block;
+}
+
+section#detail-tab .tab-body {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+section#detail-tab .tab-body .tab-wrapper {
+    width: 100%;
+    display: inline-block;
+}
+
+section#detail-tab .tab-body .tab-wrapper ul li {
+    float: left;
+    padding-right: 30px
+}
+
+section#detail-tab .tab-body .tab-wrapper ul li a {
+    font-family: "NotoSansJP-Regular", sans-serif;
+    font-size: 15px;
+    color: #000;
+    position: relative;
+}
+
+section#detail-tab .tab-body .tab-wrapper ul li a:before {
+    content: '';
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: -11px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+section#detail-tab .tab-body .tab-wrapper ul li a:hover, section#detail-tab .tab-body .tab-wrapper ul li.active a {
+    font-weight: 700;
+}
+
+section#detail-tab .tab-body .tab-wrapper ul li a:hover:before {
+    display: block;
+}
+
+section#detail-tab .tab-content {
+    width: 100%;
+    padding: 30px 0;
+}
+
+section#detail-tab .tab-item {
+    font-family: "NotoSansJP-Regular", sans-serif;
+    font-size: 15px;
+    color: #000;
+}
+
+section#detail-tab .tab-body .tab-wrapper ul li.active a:before {
+    display: block;
+}
+
+section#detail-tab .tab-table table {
+    width: 100%;
+}
+
+section#detail-tab .tab-table table tr td {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+section#detail-tab .tab-table table tr:last-child td {
+    border-bottom: 0px !important;
+}
+
+section#detail-tab .tab-table table tr td:first-child {
+    font-weight: 700;
+}
+
+section#detail-tab .tab-title h3 {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+}
+
+section#detail-tab .tab-history {
+    width: 100%;
+    display: inline-block;;
+}
+
+section#detail-tab .mt-5 {
+    margin-top: 50px;
+}
