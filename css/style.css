@@ -101,6 +101,9 @@ a:hover {
 .size32{
     font-size: 32px !important;
 }
+.size28{
+    font-size: 28px !important;
+}
 .size24{
     font-size: 24px !important;
 }
@@ -122,161 +125,7 @@ a:hover {
 .border-bottom-ddd{
     border-bottom: 1px solid #ddd;
 }
-/*start  css header */
 
-
-#logo {
-    display: inline-block;
-    width: 232px;
-    height: 60px;
-    float: left;
-    text-indent: -9999%;
-    margin: 0;
-}
-
-#logo a {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    float: left;
-    height: 100%;
-}
-
-.dropdown_item li a {
-    line-height: 24px !important;
-    padding: 5px 10px !important;
-    width: 100%;
-    display: block;
-}
-
-#logo img {
-    width: 100%;
-    height: 100%;
-}
-
-.header__desktop--box {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px 25px;
-}
-
-.main__menu--list .item {
-    position: relative;
-}
-
-.main__menu--list .item a {
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 12px 18px;
-    display: block;
-}
-.header .dropdown-menu a{
-    font-size: 15px;
-    padding: 18px 4px 15px;
-}
-.main__menu--list .item a.active {
-    font-weight: bold;
-    color: var(--main-color);
-}
-
-.main__menu--list .dropdown_item a {
-    color: #1c1c1c;
-    font-size: 16px
-}
-.main__menu--list a:hover,.header li.subMenu:hover > a{
-    color: var(--main-color);
-
-}
-.header li.subMenu:hover > a::after{
-    content: '';
-    background-color: var(--main-bg-color);
-    height: 2px;
-    width: calc(100% - 24px);
-    position: absolute;
-    top: 100%;
-    left: 12px;
-    z-index: 1001;
-    
-}
-.main__menu .fa-chevron-down{
-    transform: scale(1,1.5);
-    -webkit-text-stroke: 0.5px #fff;
-    font-size: 14px;
-    /* transition: all ease 1s; */
-}
-.header li.subMenu:hover .fa-chevron-down:before{
-    content: "\f077";
-}
-.header li.subMenu:hover > .dropdown-menu {
-    display: block;
-}
-
-.header .dropdown-menu {
-    margin: 0 !important;
-    min-width: 260px;
-    border: none;
-    padding: 20px 0 0;
-}
-.header .dropdown-menu>ul {
-    background-color: var(--main-bg-color-2);
-    padding: 15px 20px 10px;
-    border-radius: 8px;
-}
-.header .dropdown-menu li {
-    width: 100%;
-}
-.header .dropdown-menu li:not(:last-child) {
-    border-bottom: 1px solid #fad1cd;
-    
-}
-.main__menu {
-    display: flex;
-    align-items: center;
-}
-
-.main__menu--list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 100%;
-}
-.log_box {
-    display: flex;
-    align-items: center;
-}
-.log_box a {
-    width: 122px;
-    border-radius: 25px;
-}
-.log_box a {
-    width: 122px;
-    border-radius: 25px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    color: #fff;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.log_box a:hover,.log_box a:focus{
-    color: #fff;
-}
-.btn_login {
-    margin-left: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-/*end  css header */
 
 
 
@@ -396,7 +245,7 @@ a:hover {
     height: 100px;
 }
 .chart {
-    background-color: #f1d4d1;
+    /* background-color: #f1d4d1; */
     width: 150px;
     height: 150px;
     border-radius: 100%;
@@ -405,7 +254,14 @@ a:hover {
     top: 0;
     z-index: 999;
 }
-
+.apexcharts-canvas {
+    left: -48px;
+    top: -35px;
+}
+.list_project_box .apexcharts-canvas {
+    left: -85px;
+    top: -30px;
+}
 /*end css item project */
 
 
@@ -535,6 +391,7 @@ a:hover {
     margin-top: 90px;
     padding-left: 50px;
     padding-right: 50px;
+    line-height: 30px;
 }
 .service_feature_box {
     background-color: var(--main-bg-color);
@@ -591,9 +448,12 @@ a:hover {
 .strength_item .title {
     font-size: 28px;
     font-weight: bold;
+    width: calc(100% - 80px);
+    margin-bottom: 0;
 }
 .strength_item .intro {
     margin-top: 40px;
+    line-height: 30px;
 }
 .strength_box {
     margin-top: 140px;
@@ -703,7 +563,8 @@ a:hover {
     font-size: 24px;
     height: 100px;
     line-height: 100px;
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
     margin: 0 auto;
 }
 .voice_item .author{
@@ -750,7 +611,7 @@ a:hover {
 .panel-title a:hover {
     color: var(--main-color);
 }
-.panel-title a span {
+.panel-title a .icon_collapse {
     display: inline-block;
     background-color: var(--main-bg-color);
     border-radius: 100%;
@@ -761,6 +622,9 @@ a:hover {
     text-align: center;
     font-size: 28px;
     margin-right: 30px;
+}
+.panel-title a .title {
+    width: calc(100% - 90px);
 }
 .panel-title a i {
     -webkit-text-stroke: 1px #fff;
@@ -784,6 +648,7 @@ a:hover {
 .faq_panel .panel-body {
     border-top: 2px solid #eee;
     padding: 45px 55px 55px 45px;
+    line-height: 30px;
 }
 .panel-title a[aria-expanded="true"] i:before {
     content: "\f077";
@@ -826,29 +691,221 @@ a:hover {
 .website_url:hover,.website_url:focus{
     color: var(--main-color);
 }
-
-/* css footer */
-.footer_page {
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 60px;
-    padding-bottom: 120px;
-    border-top: 1px solid #eee;
+.map_box iframe {
+    max-width: 100%;
 }
-.footer_menu a{
-    color: #888;
+/* css about page */
+.banner_box img {
+    width: 100%;
 }
-.footer_menu .list_style_none li:not(:last-child) {
+.banner_box h1 {
+    position: absolute;
+    font-size: 36px;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.feel_box {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #eee;
+}
+.feel_box .img {
+    margin-top: 90px;
+}
+.feel_about_intro {
+    margin-top: 60px;
+    line-height: 30px;
+}
+.line-height-35{
+    line-height: 35px;
+}
+.message_about_box {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.message_about_intro {
+    margin-top: 90px;
+}
+.message_about_content {
+    margin-top: 95px;
+    padding-bottom: 75px;
+    border-bottom: 1px solid #eee;
+}
+.about_operating {
+    padding-bottom: 70px;
+    padding-top: 75px;
+    border-bottom: 1px solid #eee;
+}
+.about_operating_intro {
+    margin-top: 70px;
+}
+.back_about {
+    margin-top: 80px;
+}
+/* end css about page  */
+/*  css 4_pc_fund  */
+.page_project_box .item_project {
+    margin-bottom: 100px;
+}
+.list_pagination a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    background-color: var(--main-bg-color-2);
+    color: var(--main-color);
+    font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    border-radius: 100%;
+    transition: all .5s;
+}
+.list_pagination a.current {
+    color: #fff !important;
+    background-color: var(--main-bg-color);
+}
+.list_pagination a.disabled {
+    display: none;
+}
+.list_pagination a:hover,.list_pagination a:focus{
+    color: #fff !important;
+    background-color: var(--main-bg-color);
+}
+.list_pagination .pagination{
+    justify-content: center;
+}
+.project_page {
+    padding-bottom: 80px;
+}
+.page_project_box {
+    padding-top: 100px;
+}
+.page_project_box .project_list {
+    margin-top: 80px;
+}
+.select_box {
+    width: 239px;
+}
+.select_box select {
+    border: 3px solid #ececec;
+    height: 56px;
+    border-radius: 6px;
+}
+.item_project .photo img {
+    width: 100%;
+    height: auto;
+}
+.page_project_box .item_body {
+    border: 3px solid #eee;
+    border-top: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.project_list .col-xl-4 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.page_project_box .project_list .row{
+    margin-right: -20px;
+    margin-left: -20px;
+}
+/* end css 4_pc_fund  */
+/*  css login, register  */
+.login_page h1,
+.register_page h1 {
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+.submit_form{
+    max-width: 705px;
+    margin: 0 auto;
+    padding-bottom: 85px;
+}
+.submit_form label {
+    font-weight: 600;
     margin-bottom: 10px;
 }
-.last_box {
-    margin-top: 75px;
+.submit_form .form-group {
+    margin-bottom: 30px;
 }
-.coppyright{
-    color: #221815;
-    font-size: 13px;
-    text-transform: uppercase;
+.submit_form input {
+    height: 56px;
+    border-radius: 6px;
+    border: 2px solid #eee;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn_submit {
+    font-size: 24px;
+    color: #fff;
+    background-color: var(--main-bg-color);
+    border-radius: 8px;
+    height: 90px;
+    line-height: 90px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 320px;
+}
+.btn_submit:hover,.btn_submit:focus{
+    color: #fff;
+}
+.submit_form a:hover,
+.submit_form a:focus{
+    color: var(--main-color);
+}
+.submit_form a {
+    position: relative;
     font-weight: 600;
+}
+.submit_form a:before {
+    content: '';
+    height: 1px;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.border_regist{
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 2px solid #eee;
+}
+.remember_box input {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    margin-right: 15px;
+}
+.remember_box {
+    margin-right: 80px;
+}
+.login_page .btn_submit{
+    margin-right: 50px;
+}
+.btn_other{
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 8px;
+    height: 90px;
+    line-height: 90px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 320px;
+}
+.btn_other:hover,
+.btn_other:focus{
+    color: #fff;
+}
+/* end  css login, register  */
+
+h4.panel-title {
+    margin-bottom: 0;
 }
 @media (min-width:1440px){
     .header__desktop--box {
@@ -858,9 +915,15 @@ a:hover {
         max-width: 565px;
     }
 }
+@media (max-width:1199px) and (min-width:992px){
+    .chart_box {
+        width: calc(100% - 280px);
+    }
+    .note_chart {
+        width: 260px;
+    }
+}
 @media (max-width:1024px){
-    .block1024{display:block !important}
-    .hidden1024{display:none !important}
     .service_feature_content .list_item {
         padding-left: 15px;
         padding-right: 15px;
@@ -874,21 +937,35 @@ a:hover {
     .company_infor {
         padding-left: 15px;
     }
+    .owl-carousel-cozuchi .owl-prev {
+        left: -25px;
+    }
+    .owl-carousel-cozuchi .owl-next{
+        right: -25px;
+    }
+    .main_page{
+        margin-top: 64px;
+    }
 }
 @media (max-width:991px){
+    .section_title {
+        font-size: 28px;
+    }
     .service_item {
         margin-bottom: 40px;
     }
     .safety_item {
         display: flex;
         flex-flow: row-reverse;
+        margin-bottom: 70px;
     }
     .safety_item .photo {
         width: 170px;
         margin-left: 30px;
+        margin-bottom: 0;
     }
     .safety_item .photo img{
-        height: 170px;
+        height: auto;
     }
     .safety_item .body {
         width: calc(100% - 200px);
@@ -896,5 +973,583 @@ a:hover {
     .safety_item .title {
         height: auto;
         margin-bottom: 25px;
+        text-align: left;
+        font-size: 24px;
+    }
+    .section_header {
+        padding-left: 40px;
+        padding-right: 30px;
+    }
+    .about_box_content {
+        margin-top: 70px;
+    }
+    .about_intro {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 50px;
+    }
+    .about_box_content .img img {
+        max-width: 350px;
+        height: auto;
+    }
+    .about_box {
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+    .about_intro .semni_bold{
+        font-weight: 500;
+    }
+    .service_feature_content {
+        margin-top: 80px;
+    }
+    .service_feature_box {
+        padding-bottom: 75px;
+    }
+    .strength_box {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .strength_item .number {
+        width: 40px;
+        font-size: 48px;
+        line-height: 40px;
+    }
+    .strength_item .title{
+        width: calc(100% - 40px);
+    }
+    .strength_content {
+        margin-top: 70px;
+    }
+    .strength_photo {
+        margin-top: 50px;
+        text-align: center;
+      
+    }
+    .strength_photo img{
+        height: auto;
+    }
+    .strength_item:not(:last-child) {
+        margin-bottom: 60px;
+        padding-bottom: 60px;
+        border-bottom: 2px solid #eee;
+    }
+    .safety_item .title span {
+        justify-content: left;
+    }
+    .safety_box {
+        padding-bottom: 70px;
+    }
+    .flow_box {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    .mobile_box {
+        width: 130px;
+    }
+    .desk_box {
+        width: calc(100% - 130px);
+        padding-right: 20px;
+    }
+    .fieldset_title {
+        text-align: left;
+    }
+    .fieldset_flow_item .photo {
+        margin-top: 10px;
+        margin-bottom: 0;
+        height: auto;
+    }
+    .fieldset_flow_item {
+        display: flex;
+        height: auto;
+        margin-bottom: 50px;
+        padding: 35px;
+    }
+    .map_box {
+        margin-top: 100px;
+    }
+    /* .project_page .chart_box {
+        width: calc(100% - 280px);
+    }
+    .project_page .note_chart {
+        width: 260px;
+    } */
+    .login_page .btn_submit {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .submit button {
+        min-width: 55%;
+    }
+   
+}
+@media (max-width:991px) and (min-width:768px){
+    .note_chart p .size36 {
+        font-size: 24px !important;
+    }
+    .note_chart p .size18 {
+        font-size: 14px !important;
+    }
+    .note_chart {
+        width: 180px;
+        padding-left: 20px;
+    }
+    .chart_box { position: relative;
+        width: calc(100% - 200px);
+    }
+    
+}
+@media (max-width:767px){
+    .last_box {
+        margin-top: 0;
+        flex-wrap: wrap-reverse;
+    }
+   
+    .text-left-mobile{
+        text-align: left !important;
+    }
+    .login-slide {
+        right: 50px;
+        font-size: 15px;
+        max-width: 300px;
+        height: 50px;
+        bottom: 100px;
+    }
+    .owl-carousel-cozuchi .owl-prev {
+        left: 20px;
+    }
+    .owl-carousel-cozuchi .owl-next {
+        right: 20px;
+    }
+    .view_more_box {
+        right: 30px;
+    }
+    .section_title {
+        width: calc(100% - 210px);
+        padding-left: 30px;
+    }
+    .section_header {
+        padding-left: 30px;
+    }
+    .panel-title a .icon_collapse {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-right: 20px;
+    }
+    .panel-title a .title {
+        width: calc(100% - 70px);
+    }
+    .faq_content {
+        margin-top: 80px;
+    }
+    .project_box {
+        margin-top: 95px;
+    }
+    .faq_box {
+        padding-bottom: 90px;
+        padding-top: 90px;
+    }
+    .company_box{
+        padding-top: 90px;
+    }
+    .strength_box .view_more_box{
+        display: none;
+    }
+    .strength_box .section_title,
+    .about_box .section_title,
+    .flow_box .section_title,
+    .faq_box  .section_title,
+    .company_box   .section_title,
+    .voice_box .section_title{
+        width: 100%;
+    }
+    .feel_box {
+        padding-top: 80px;
+    }
+    .feel_box .img img {
+        max-width: 335px;
+        height: auto;
+    }
+    .feel_box .img {
+        margin-top: 75px;
+    }
+    .feel_about_intro .size18{
+        font-size: 20px !important;
+    }
+    .message_about_box {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .message_about_intro {
+        margin-top: 60px;
+    }
+    .message_about_content {
+        margin-top: 80px;
+        padding-bottom: 120px;
+    }
+    .project_page .apexcharts-canvas {
+        left: -5px;
+        top: -35px;
+    }
+    .list_pagination {
+        margin-top: 100px;
+    }
+    .btn_other,
+    .btn_submit {
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+        max-width: 320px;
+        font-size: 20px;
+    }
+    .remember_box {
+        margin-right: 25px;
+    }
+    .section_title .size60 {
+        font-size: 48px !important;
+    }
+    .safety_item .body {
+        width: calc(100% - 190px);
+    }
+    .safety_item .photo {
+        width: 160px;
+        
+    }
+    .company_box {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 45px;
+    }
+    .fieldset_flow_item legend{
+        font-size: 48px;
+    }
+    .fieldset_title {
+       font-size: 24px;
+    }
+    .panel-title a i{
+        right: 25px;
+    }
+    .panel-title a {
+        font-size: 18px;
+        padding: 22px 50px 22px 15px;
+    }
+    .faq_panel .panel-body {
+        padding: 15px 22px 24px;
+    }
+    .company_name{
+        font-size: 36px;
+    }
+}
+@media (max-width:576px){
+    
+}
+@media (max-width:480px){
+    .owl-carousel-cozuchi .owl-prev {
+        left: 12px;
+    }
+    .owl-carousel-cozuchi .owl-next {
+        right: 12px;
+    }
+    .login-slide {
+        font-size: 14px;
+    }
+    .section_title {
+        font-size: 20px;
+    }
+    .view_more_box {
+        height: 40px;
+        width: 140px;
+        font-size: 12px;
+        line-height: 40px;
+        right: 15px;
+        top: -6px;
+    }
+    .section_title {
+        width: calc(100% - 150px);
+    }
+    .other_box_regist{
+        flex-wrap: wrap;
+    }
+    .other_box_regist span {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .remember_box {
+        margin-bottom: 15px;
+    }
+    .forgot_pass,
+    .remember_box {
+        width: 100%;
+    }
+    .form-group.check_box {
+        flex-wrap: wrap;
+    }
+   
+}
+@media (max-width:375px){
+    .owl-carousel-cozuchi .owl-prev {
+        left: 12px;
+    }
+    .owl-carousel-cozuchi .owl-next {
+        right: 12px;
+    }
+    .feel_box {
+        padding-top: 40px;
+        padding-bottom: 35px;
+    }
+    .feel_box .img {
+        margin-top: 35px;
+    }
+    .feel_about_intro .size18{
+        font-size: 10px !important;
+    }
+    .message_about_intro {
+        margin-top: 30px;
+    }
+    .message_about_content {
+        margin-top: 40px;
+        padding-bottom: 60px;
+    }
+    .banner_box h1 {
+        font-size: 18px;
+    }
+    .banner_box img {
+        width: 100%;
+        height: auto;
+        min-height: 120px;
+    }
+    .about_page .size32{
+        font-size: 16px !important;
+    }
+    .about_page .size28{
+        font-size: 14px !important;
+    }
+    .about_page .size18{
+        font-size: 12px !important;
+    }
+    .feel_box .img img {
+        max-width: 170px;
+    }
+    .about_operating {
+        padding-bottom:30px;
+        padding-top: 35px;
+    }
+    .about_operating_intro {
+        margin-top: 35px;
+    }
+    .message_about_box {
+        padding-bottom: 25px;
+    }
+    
+    .note_chart p .size36 {
+        font-size: 24px !important;
+    }
+    .note_chart p .size18 {
+        font-size: 12px !important;
+    }
+    .note_chart p span:first-child {
+        font-size: 12px;
+    }
+    .project_page .apexcharts-canvas {
+        top: -10px;
+    }
+    .page_project_box .item_project {
+        margin-bottom: 70px;
+    }
+    .list_pagination {
+        margin-top: 20px;
+    }
+    .project_page {
+        padding-bottom: 50px;
+    }
+    .company_box  {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .company_infor {
+        padding-left: 0;
+    }
+    .service_item .title {
+        font-size: 12px;
+        line-height: 16px;
+        height: 35px;
+    }
+    .img_service {
+        height: 100px;
+    }
+    .service_feature_box {
+        padding-bottom: 10px;
+    }
+    .service_feature_content {
+        margin-top: 40px;
+    }
+    .service_feature_box {
+        padding-top: 40px;
+    }
+    .safety_box {
+        padding-bottom: 35px;
+        padding-top: 50px;
+    }
+    .safety_content {
+        margin-top: 50px;
+    }
+    .safety_item .body {
+        width: calc(100% - 100px);
+    }
+    .safety_item .photo {
+        width: 80px;
+        margin-left: 20px;
+    }
+    .safety_item .title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .safety_intro {
+        font-size: 9px;
+        line-height: 18px;
+    }
+    .section_title {
+        font-size: 14px;
+    }
+    .view_more_box {
+        height: 30px;
+        width: 120px;
+        font-size: 9px;
+        line-height: 30px;
+        right: 15px;
+        top: -6px;
+    }
+    .section_title {
+        width: calc(100% - 120px);
+    }
+    .fieldset_flow_item {
+        padding: 15px;
+    }
+    .fieldset_flow_item legend{
+        font-size: 24px;
+    }
+    .mobile_box {
+        width: 65px;
+    }
+    .desk_box {
+        width: calc(100% - 65px);
+    }
+    .fieldset_title {
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+     .desk_box .intro {
+        font-size: 9px;
+        line-height: 16px;
+    }
+    .fieldset_flow_item{
+        margin-bottom: 25px;
+    }
+    .flow_content .registration a {
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+        max-width: 240px;
+    }
+    .flow_content .registration {
+        margin-top: 35px;
+    }
+    .flow_box {
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    .flow_content {
+        margin-top: 30px;
+    }
+    .voice_item {
+        
+        padding: 20px 15px 15px 10px;
+        height: 360px;
+    }
+    .voice_item .intro {
+        font-size: 9px;
+        height: 255px;
+    }
+    .voice_box {
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+    .voice_content {
+        margin-top: 45px;
+    }
+    .strength_item .title{
+        font-size: 14px;
+    }
+    .strength_item .number {
+        font-size: 24px;
+        width: 30px;
+        line-height: 30px;
+    }
+    .panel-title a .icon_collapse {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .panel-title a .title {
+        width: calc(100% - 40px);
+        font-size: 9px;
+        line-height: 16px;
+    }
+    .panel-title a i{
+        right: 15px;
+    }
+    .panel-title a {
+        padding: 15px 45px 15px 15px;
+    }
+    .faq_content {
+        margin-top: 40px;
+    }
+    .faq_box {
+        padding-bottom: 45px;
+        padding-top: 45px;
+    }
+    .company_box{
+        padding-top: 45px;
+    }
+    .project_box {
+        margin-top: 50px;
+    }
+    .list_project_box {
+        margin-top: 45px;
+        padding-bottom: 60px;
+    }
+    .about_box_content .img img {
+        max-width: 175px;
+    }
+    .about_box_content {
+        margin-top: 35px;
+    }
+    .about_box {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .about_intro {
+        font-size: 9px;
+        line-height: 20px;
+        margin-top: 25px;
+    }
+    .strength_item .intro {
+        font-size: 9px;
+        line-height: 20px;
+    }
+    .company_infor_box {
+        font-size: 10px;
+    }
+    .faq_panel .panel-body {
+       font-size: 9px;
+    }
+    .company_name{
+        font-size: 16px;
     }
 }

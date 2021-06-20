@@ -14,6 +14,8 @@
     
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobilemenu.css">
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -22,6 +24,7 @@
     <script src="js/jquery-simple-mobilemenu.min.js"></script>
     <!-- Source: https://www.jssor.com/dinhkhamhubt/banner-slider.slider/=edit -->
     <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+    <script src="js/apexchart.js" type="text/javascript"></script>
     <script src="js/style.js"></script>
 </head>
 
@@ -29,15 +32,21 @@
     <header id="header" class="header">
         <div class="header__desktop hidden1024">
             <div class="header__desktop--box">
-                <h1 id="logo">Cozuchi
-                    <a title="Cozuchi" class="navbar-brand" href="#">
-                        <img alt="Cozuchi" src="images/logo.png" class="img100">
-                    </a>
-                </h1>
+                <div class="logo_box">
+                    <h1 id="logo">Cozuchi
+                        <a title="Cozuchi" class="navbar-brand" href="#">
+                            <img alt="Cozuchi" src="images/logo.png" class="img100">
+                        </a>
+                    </h1>
+                    <div class="description_page">
+                        まちづくり不動産クラウドファンディング
+                    </div>
+                </div>
+                
                 <div class="menu_box d-flex">
                     <nav class="main__menu" id="main__menu">
                         <ul class="main__menu--list list_style_none">
-                            <li class="item active"><a class="navigation__link" href="#" title="COZUCHIとは">COZUCHIとは</a>
+                            <li class="item active"><a class="navigation__link" href="about.html" title="COZUCHIとは">COZUCHIとは</a>
                             </li>
                             <li class="item position-relative subMenu">
                                 <a class="" data-toggle="dropdown" href="javascript:void(0);" title="サービスについて">サービスについて
@@ -105,7 +114,7 @@
             </ul>
         </div>
     </header>
-    <main id="main">
+    <main id="main" class="main_page">
         <section class="section_box slider_box position-relative" id="">
             <div id="jssor_1"
                 style="position:relative;margin:0 auto;top:0px;left:0px;width:1440px;height:780px;overflow:hidden;visibility:hidden;">
@@ -135,7 +144,7 @@
         <section class="section_box project_box position-relative">
             <div class="section_header">
                 <h2 class="section_title">プロジェクト</h2>
-                <a href="#" class="btn btn_main view_more_box">View more</a>
+                <a href="#" class="btn btn_main view_more_box">View more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
             <div class="section_content list_project_box">
                 <div class="bg_project"></div>
@@ -199,7 +208,7 @@
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between pt-1">
                                             <div class="chart_box">
-                                                <div class="chart"></div>
+                                                <div class="radial_chart"></div>
                                             </div>
                                             <div class="note_chart">
                                                 <p class="d-flex align-items-center justify-content-between">
@@ -273,7 +282,7 @@
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between pt-1">
                                             <div class="chart_box">
-                                                <div class="chart"></div>
+                                                <div class="radial_chart radial_chart_1"></div>
                                             </div>
                                             <div class="note_chart">
                                                 <p class="d-flex align-items-center justify-content-between">
@@ -347,7 +356,7 @@
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between pt-1">
                                             <div class="chart_box">
-                                                <div class="chart"></div>
+                                                <div class=" radial_chart_full"></div>
                                             </div>
                                             <div class="note_chart">
                                                 <p class="d-flex align-items-center justify-content-between">
@@ -421,7 +430,7 @@
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between pt-1">
                                             <div class="chart_box">
-                                                <div class="chart"></div>
+                                                <div class=" radial_chart_3"></div>
                                             </div>
                                             <div class="note_chart">
                                                 <p class="d-flex align-items-center justify-content-between">
@@ -465,12 +474,12 @@
         <section class="section_box service_feature_box ">
             <div class="section_header">
                 <h2 class="section_title color_fff">サービスの特徴</h2>
-                <a href="#" class="btn btn_main view_more_box">View more</a>
+                <a href="#" class="btn btn_main view_more_box">View more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
             <div class="section_content service_feature_content">
                 <div class="list_item">
                     <div class="row">
-                        <div class="col-xs-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                             <div class="service_item">
                                 <h3 class="title limit_2line">1万円から 不動産投資が可能</h3>
                                 <div class="border_img">
@@ -481,7 +490,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                             <div class="service_item">
                                 <h3 class="title limit_2line">「ほったらかし」で、 とっても楽チン</h3>
                                 <div class="border_img">
@@ -492,7 +501,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                             <div class="service_item">
                                 <h3 class="title limit_2line">分散投資で リスクマネジメント</h3>
                                 <div class="border_img">
@@ -503,7 +512,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3">
                             <div class="service_item ">
                                 <h3 class="title limit_2line">最短15分で 投資が可能</h3>
                                 <div class="border_img">
@@ -522,7 +531,7 @@
             <div class="section_header">
                 <h2 class="section_title">COZUCHIの <span class="color_main"><span class="size60">3</span>つの強み</span>
                 </h2>
-                <a href="#" class="btn btn_main view_more_box">View more</a>
+                <a href="#" class="btn btn_main view_more_box">View more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
             <div class="section_content strength_content">
                 <div class="container">
@@ -610,7 +619,7 @@
         <section class="section_box safety_box ">
             <div class="section_header">
                 <h2 class="section_title">安心・安全な投資の取り組み</h2>
-                <a href="#" class="btn btn_main view_more_box">View more</a>
+                <a href="#" class="btn btn_main view_more_box">View more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
             <div class="section_content safety_content">
                 <div class="container">
@@ -678,36 +687,63 @@
                         <div class="col-lg-4">
                             <fieldset class="fieldset_flow_item">
                                 <legend align="center">01</legend>
-                                <p class="fieldset_title">会員登録</p>
-                                <div class="photo">
-                                    <img src="./images/flow_1.png" alt="">
+                                <div class="desk_box">
+                                    
+                                    <p class="fieldset_title">会員登録</p>
+                                    <div class="photo d-none d-lg-block">
+                                        <img src="./images/flow_1.png" alt="">
+                                    </div>
+                                    <div class="intro">
+                                        お名前とメールアドレスだけで簡単登録！プロジェクトの詳細ページが見られたり、プロジェクトの公開情報をいち早く受け取る事が可能です。
+                                    </div>
                                 </div>
-                                <div class="intro">
-                                    お名前とメールアドレスだけで簡単登録！プロジェクトの詳細ページが見られたり、プロジェクトの公開情報をいち早く受け取る事が可能です。
+                                <div class="mobile_box d-block d-lg-none">
+                                    <div class="photo">
+                                        <img src="./images/flow_1.png" alt="">
+                                    </div>
                                 </div>
+                                
                             </fieldset>
                         </div>
                         <div class="col-lg-4">
                             <fieldset class="fieldset_flow_item">
                                 <legend align="center">02</legend>
-                                <p class="fieldset_title">投資家登録</p>
-                                <div class="photo">
-                                    <img src="./images/flow_2.png" alt="">
+                                <div class="desk_box">
+                                   
+                                    <p class="fieldset_title">投資家登録</p>
+                                    <div class="photo d-none d-lg-block">
+                                        <img src="./images/flow_2.png" alt="">
+                                    </div>
+                                    <div class="intro">
+                                        お名前とメールアドレスだけで簡単登録！プロジェクトの詳細ページが見られたり、プロジェクトの公開情報をいち早く受け取る事が可能です。
+                                    </div>
                                 </div>
-                                <div class="intro">
-                                    お名前とメールアドレスだけで簡単登録！プロジェクトの詳細ページが見られたり、プロジェクトの公開情報をいち早く受け取る事が可能です。
+                               
+                                <div class="mobile_box d-block d-lg-none">
+                                    <div class="photo">
+                                        <img src="./images/flow_2.png" alt="">
+                                    </div>
                                 </div>
                             </fieldset>
                         </div>
                         <div class="col-lg-4">
                             <fieldset class="fieldset_flow_item">
                                 <legend align="center">03</legend>
-                                <p class="fieldset_title">投資開始</p>
-                                <div class="photo">
-                                    <img src="./images/flow_3.png" alt="">
+                                <div class="desk_box">
+                                   
+                                    <p class="fieldset_title">投資開始</p>
+                                    <div class="photo d-none d-lg-block">
+                                        <img src="./images/flow_3.png" alt="">
+                                    </div>
+                                    <div class="intro">
+                                        お名前とメールアドレスだけで簡単登録！プロジェクトの詳細ページが見られたり、プロジェクトの公開情報をいち早く受け取る事が可能です。
+                                    </div>
                                 </div>
-                                <div class="intro">
-                                    お名前とメールアドレスだけで簡単登録！プロジェクトの詳細ページが見られたり、プロジェクトの公開情報をいち早く受け取る事が可能です。
+                                
+                                <div class="mobile_box d-block d-lg-none">
+                                    <div class="photo">
+                                        <img src="./images/flow_3.png" alt="">
+                                    </div>
                                 </div>
                             </fieldset>
                         </div>
@@ -784,7 +820,8 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                            <span class="icon_collapse">Q</span> 不動産投資クラウドファンディングとはなんですか？
+                                            <span class="icon_collapse">Q</span>
+                                            <span class="title"> 不動産投資クラウドファンディングとはなんですか？</span>
                                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                         </a>
                                     </h4>
@@ -803,7 +840,7 @@
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                                             <span class="icon_collapse">Q</span>
-                                            COZUCHIとはどのようなサイトですか？
+                                            <span class="title">COZUCHIとはどのようなサイトですか？</span>
                                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                         </a>
                                     </h4>
@@ -821,7 +858,8 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                            <span class="icon_collapse">Q</span> 不動産特定共同事業法とは？
+                                            <span class="icon_collapse">Q</span> 
+                                            <span class="title">不動産特定共同事業法とは？</span>
                                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                         </a>
                                     </h4>
@@ -839,7 +877,8 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                                            <span class="icon_collapse">Q</span> REITやソーシャルレンディングとの違いはありますか？
+                                            <span class="icon_collapse">Q</span>
+                                            <span class="title"> REITやソーシャルレンディングとの違いはありますか？</span>
                                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                         </a>
                                     </h4>
@@ -857,7 +896,10 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                                            <span class="icon_collapse">Q</span> 投資を始めるにはどのような手続きが必要ですか？
+                                            <span class="icon_collapse">Q</span> 
+                                            <span class="title">
+                                                投資を始めるにはどのような手続きが必要ですか？
+                                            </span>
                                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                         </a>
                                     </h4>
@@ -878,7 +920,7 @@
         </section>
         <section class="section_box company_box ">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="company_infor_box">
                         <h2 class="section_title">よくある質問</h2>
                         <div class="company_infor">
@@ -920,7 +962,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="map_box">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7986707022665!2d105.81378231440696!3d21.000705994112543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9b3f23b42b%3A0x49fa01aaa06d239b!2sVinhomes%20Royal%20City!5e0!3m2!1svi!2s!4v1624053413260!5m2!1svi!2s" width="680" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
@@ -929,9 +971,9 @@
         </section>
     </main>
     <footer id="footer" class="footer_page">
-        <div class="footer_menu">
+        <div class="footer_menu d-none d-lg-block">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <ul class="list_style_none">
                         <li><a href="">個人情報の取り扱い方針（プライバシーポリシー)</a></li>
                         <li><a href="">勧誘方針 </a></li>
@@ -939,7 +981,7 @@
                         <li><a href="">業務管理者名簿</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <ul class="list_style_none">
                         <li><a href="">反社会的勢力との取引排除規定</a></li>
                         <li><a href="">情報セキュリティ基本方針 </a></li>
@@ -960,6 +1002,107 @@
             </div>
         </div>
     </footer>
+    <script>
+        var windowsize = $(window).width();
+        if (windowsize >= 768) {
+           $height = 245;
+           $width = 245;
+        }else if(windowsize < 768 && windowsize > 375){
+            $height =  300;
+            $width = 300;
+        }else if(windowsize <= 375){
+            $height =  200;
+            $width = 200;
+        }
+        var options = {
+            chart: {
+                height: $height,
+                width: $width,
+                type: 'radialBar',
+                foreColor: '#f1d4d1'
+            },
+            series: [70],
+            labels: ['達成率'],
+            fill: {
+                colors: ['#e37467', '#f1d4d1']
+            },
+            plotOptions: {
+                radialBar: {
+
+                    track: {
+                        background: "#f1d4d1",
+                        strokeWidth: '125%',
+
+                        dropShadow: {
+                            enabled: true,
+                            background: '#e37467',
+                            color: '#e37467',
+                            opacity: 0,
+                            blur: 2
+                        }
+                    },
+                    foreColor: '#e37467',
+                    dataLabels: {
+                        value: {
+                            foreColor: '#e37467',
+                            color: '#e37467',
+                            fontSize: '22px'
+                        }
+                    }
+                }
+            },
+        }
+        var options2 = {
+            chart: {
+                height: $height,
+                width: $width,
+                type: 'radialBar',
+                foreColor: '#f1c846'
+            },
+            series: [120],
+            labels: ['達成率'],
+            fill: {
+                colors: ['#f1c846', '#f1c846']
+            },
+            plotOptions: {
+                radialBar: {
+
+                    track: {
+                        background: "#f1c846",
+                        strokeWidth: '125%',
+
+                        dropShadow: {
+                            enabled: true,
+                            background: '#f1c846',
+                            color: '#f1c846',
+                            opacity: 0,
+                            blur: 2
+                        }
+                    },
+                    foreColor: '#f1c846',
+                    dataLabels: {
+                        value: {
+                            foreColor: '#f1c846',
+                            color: '#f1c846',
+                            fontSize: '22px'
+                        }
+                    }
+                }
+            },
+
+        }
+
+        var chart = new ApexCharts(document.querySelector(".radial_chart"), options);
+        var chart1 = new ApexCharts(document.querySelector(".radial_chart_1"), options);
+        var chart3 = new ApexCharts(document.querySelector(".radial_chart_3"), options);
+        var chart2 = new ApexCharts(document.querySelector(".radial_chart_full"), options2);
+
+        chart.render();
+        chart1.render();
+        chart2.render();
+        chart3.render();
+
+    </script>
 </body>
 
 </html>
