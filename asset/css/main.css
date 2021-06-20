@@ -421,6 +421,7 @@ select.form-control.tableSelect {
 #stacked,
 #pie-chart {
     min-height: 250px;
+    padding: 10px 0;
 }
 
 .box-chart {
@@ -453,6 +454,18 @@ select.form-control.tableSelect {
 	padding-top: 15px;
 }
 
-.chart-tab ul li.active {
+.chart-tab ul li.active, .chart-tab ul li:hover {
     background: #ffe5e2;
+}
+
+.app-copyright {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+}
+
+.chart-tab ul li:hover a {
+    color: #000;
 }

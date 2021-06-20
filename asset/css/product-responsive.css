@@ -4,6 +4,19 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .display-1 > div {
+        margin: 0px !important;
+        width: 75px;
+        margin-left: 10px !important;
+    }
+    .form-group.display-1 {
+        display: flex !important;
+    }
+
+    .form-group.display-1 input {
+        width: 40% !IMPORTANT;
+    }
+
     section#banner-header {
         margin-top: 64px;
         padding: 50px 0;
@@ -159,10 +172,6 @@
         width: 60%;
         float: left;
         margin-right: 5px;
-    }
-
-    .product-form-action .form-group {
-        display: flex !important;
     }
 
     .product-footer .product-footer-item, .product-info .product-price-2 table tr td {
