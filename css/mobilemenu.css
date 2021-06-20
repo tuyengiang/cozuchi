@@ -10,7 +10,7 @@ body.mmactive{overflow:hidden}
 .sm_menu_outer{height:calc(100vh - 64px);overflow-y:scroll;overflow-x:hidden;position:fixed;right:0;top:64px;z-index:-9;width:100%;opacity:0;background-color:#fff;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;transition:opacity .2s;border-top:.5px solid rgba(0,0,0,0);border-image:linear-gradient(to right,rgba(0,0,0,0) 0%,#2a2a2a 20%,#2a2a2a 50%,#2a2a2a 80%,rgba(0,0,0,0) 100%) 0 0 1 0}
 .sm_menu_outer.active{opacity:1;z-index:999}
 .sm_menu_outer .mobile_menu li.back a{padding:20px 5px 20px 45px;background:#fff;position:relative}
-.sm_menu_outer .mobile_menu li.back a:before{    font-family: 'Font Awesome\ 5 Free';content:"\f053";position:absolute;left:15px;top:14px;font-size:26px;    -webkit-text-stroke: 1px #fff;}
+.sm_menu_outer .mobile_menu li.back a:before{    font-family: 'Font Awesome\ 5 Free';content:"\f053";position:absolute;left:15px;top:14px;font-size:26px;-webkit-text-stroke: 1px #fff;}
 .sm_menu_outer .mobile_menu a{color:#000;display:block;letter-spacing:1px;padding:10px 15px;text-transform:uppercase;text-decoration:none}
 .sm_menu_outer .mobile_menu .submenu{background-color:#fff;height:calc(100vh - 70px);position:absolute;right:-100%;top:0;transition:all .5s ease 0s;width:100%;z-index:999;padding:0}
 .sm_menu_outer .mobile_menu li.active>.submenu{right:0}
