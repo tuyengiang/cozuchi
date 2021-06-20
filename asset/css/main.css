@@ -173,6 +173,7 @@ a {
     color: #333;
     font-family: "NotoSansJP-Regular", sans-serif;
     font-size: 15px;
+	font-weight: bold;
 }
 
 .app-sidebar .app-menu nav.app-menu-container ul li a:hover, .app-sidebar .app-menu nav.app-menu-container ul li.active a {
@@ -449,6 +450,7 @@ select.form-control.tableSelect {
     border-radius: 0px 0px 10px 10px;
     width: 100%;
     display: inline-block;
+	padding-top: 15px;
 }
 
 .chart-tab ul li.active {
