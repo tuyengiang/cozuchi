@@ -534,6 +534,9 @@ a:hover {
 .safety_content {
     margin-top: 100px;
 }
+.safety_intro {
+    line-height: 30px;
+}
 .safety_item .photo {
     text-align: center;
     margin-bottom: 50px;
@@ -959,6 +962,10 @@ a:hover {
 h4.panel-title {
     margin-bottom: 0;
 }
+.project_page .apexcharts-canvas {
+    left: -52px;
+    top: -30px;
+}
 @media (min-width:1440px){
     .header__desktop--box {
         padding: 35px 40px;
@@ -976,6 +983,23 @@ h4.panel-title {
     }
 }
 @media (max-width:1024px){
+    img{
+        height: auto;
+    }
+    .service_item .title{
+        font-size: 20px;
+    }
+    .safety_item .title {
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+    .fieldset_title {
+        font-size: 24px;
+    }
+    .fieldset_flow_item .photo {
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
     .service_feature_content .list_item {
         padding-left: 15px;
         padding-right: 15px;
@@ -1025,6 +1049,7 @@ h4.panel-title {
         width: 170px;
         margin-left: 30px;
         margin-bottom: 0;
+        padding-top: 5px;
     }
     .safety_item .photo img{
         height: auto;
@@ -1171,6 +1196,10 @@ h4.panel-title {
         padding-bottom: 45px;
         margin-bottom: -45px;
     }
+    .project_page .apexcharts-canvas {
+        left: -45px;
+        top: -26px;
+    }
 }
 @media (max-width:991px) and (min-width:768px){
     .note_chart p .size36 {
@@ -1186,9 +1215,13 @@ h4.panel-title {
     .chart_box { position: relative;
         width: calc(100% - 200px);
     }
-    
+    .list_project_box .apexcharts-canvas {
+        left: -80px;
+        top: -25px;
+    }
 }
 @media (max-width:767px){
+    
     .last_box {
         margin-top: 0;
         flex-wrap: wrap-reverse;
@@ -1302,7 +1335,7 @@ h4.panel-title {
         top: -35px;
     }
     .list_pagination {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .btn_other,
     .btn_submit {
@@ -1347,7 +1380,7 @@ h4.panel-title {
         padding: 15px 22px 24px;
     }
     .company_name{
-        font-size: 36px;
+        font-size: 32px;
     }
     .select_box {
         width: 200px;
@@ -1358,6 +1391,18 @@ h4.panel-title {
     .project_page .note_chart {
         width: 250px;
         padding-left: 10px;
+    }
+    .item_project .title_item {
+        line-height: 22px;
+    }
+    .map_box iframe{
+        max-height: 600px;
+    }
+    .page_project_box {
+        padding-top: 80px;
+    }
+    .safety_content {
+        margin-top: 80px;
     }
 }
 @media (max-width:576px){
@@ -1371,7 +1416,7 @@ h4.panel-title {
     }
     
     .note_chart p .size36 {
-        font-size: 32px !important;
+        font-size: 24px !important;
     }
     .note_chart p .size18 {
         font-size: 16px !important;
@@ -1388,9 +1433,7 @@ h4.panel-title {
         width: 150px;
         padding-left: 10px;
     }
-    .note_chart p .size36 {
-        font-size: 28px !important;
-    }
+    
     .note_chart p .size18 {
         font-size: 12px !important;
     }
@@ -1400,10 +1443,13 @@ h4.panel-title {
     }
     .note_chart p span:last-child {
         width: calc(100% - 70px);
-        
     }
     .chart_box {
         width: calc(100% - 150px);
+    }
+    .list_project_box .apexcharts-canvas {
+        left: -80px;
+        top: -26px;
     }
     .project_page  .chart_box {
         width: calc(100% - 180px);
@@ -1415,6 +1461,51 @@ h4.panel-title {
     .project_page .apexcharts-canvas {
         left: -5px;
         top: -25px;
+    }
+    .service_item .title {
+        font-size: 14px;
+        line-height: 30px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .border_img {
+        margin-bottom: 0
+    }
+    .border_img img{
+        height: auto;
+    }
+    .safety_box {
+        padding-bottom: 45px;
+        padding-top: 50px;
+    }
+    .safety_content {
+        margin-top: 50px;
+    }
+    .img_service {
+        height: 140px;
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .img_service img {
+        margin: 0 auto;
+        
+    }
+    .service_item {
+        padding: 30px 20px 15px;
+    }
+    .strength_content {
+        margin-top: 40px;
+    }
+    .service_feature_box {
+        padding-bottom: 40px;
+    }
+    .strength_item .title {
+        font-size: 20px;
+    }
+    .strength_item .intro {
+        margin-top: 20px;
+        font-size: 12px;
     }
     .intro_banner {
         font-size: 30px;
@@ -1428,19 +1519,19 @@ h4.panel-title {
     .login-slide {
         font-size: 14px;
     }
-    .section_title {
-        font-size: 20px;
-    }
+    
     .view_more_box {
         height: 40px;
-        width: 140px;
+        width: 130px;
         font-size: 12px;
         line-height: 40px;
         right: 15px;
         top: -6px;
+        padding-right: 0;
     }
     .section_title {
-        width: calc(100% - 150px);
+        width: calc(100% - 140px);
+        font-size: 20px;
     }
     .other_box_regist{
         flex-wrap: wrap;
@@ -1464,21 +1555,242 @@ h4.panel-title {
     }
     .login-slide{
         font-size: 20px;
-        height: 55px;
+       padding: 0 40px;
+       height: 45px;
+       font-size: 16px;
     }
     .login-slide a {
         max-width: 425px;
         margin: 0 auto;
     }
-    .project_search {
-        flex-wrap: wrap-reverse;
-    }
+    
     .project_search .select_box {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 150px;
+        font-size: 14px;
     }
     .project_search .results {
+        font-size: 14px;
+    }
+    .select_box select {
+        height: 50px;
+    }
+    
+    .type_item {
+        font-size: 10px;
+        width: 130px;
+    }
+    .item_project .category {
+        font-size: 12px;
+    }
+    .item_project .title_item {
+        font-size: 14px !important;
+        line-height: 22px;
+    }
+    .item_infor .size32 {
+        font-size: 24px !important;
+    }
+    .safety_item .photo {
+        width: 120px;
+        margin-left: 20px;
+        padding-top: 10px;
+    }
+    .safety_item .body {
+        width: calc(100% - 140px);
+    }
+    .safety_item .title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .safety_intro {
+        font-size: 12px;
+    }
+    .safety_item{
+        margin-bottom: 40px;
+    }
+    .fieldset_flow_item {
+        padding: 15px 15px 25px 15px;
+    }
+   
+    .fieldset_title {
+        font-size: 18px;
+    }
+    .desk_box .intro {
+        font-size: 12px;
+    }
+    .flow_content {
+        margin-top: 40px;
+    }
+    .flow_content .registration {
+        margin-top: 20px;
+    }
+    .flow_content .registration a {
+        height: 60px;
+        line-height: 60px;
+        max-width: 320px;
+        font-size: 18px;
+    }
+    .flow_box {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .mobile_box {
+        width: 100px;
+    }
+    .desk_box {
+        width: calc(100% - 100px);
+    }
+    .voice_box {
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+    .voice_content {
+        margin-top: 45px;
+    }
+    .voice_item .intro {
+        font-size: 12px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .voice_item .author {
+        font-size: 14px;
+    }
+    .voice_item {
+        height: 410px;
+    }
+    .faq_box {
+        padding-bottom: 45px;
+        padding-top: 45px;
+    }
+    .faq_content {
+        margin-top: 40px;
+    }
+    .panel-title a {
+        font-size: 14px;
+        padding: 15px 50px 15px 15px;
+    }
+    .panel-title a i {
+        right: 15px;
+    }
+    .panel-title a .icon_collapse {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .company_box {
+        padding-top: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .company_name {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .company_infor {
+        margin-top: 45px;
+    }
+    .information_contact {
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+    }
+    .company_infor_box {
+        font-size: 14px;
+    }
+    .map_box iframe{
+        max-height: 500px;
+    }
+    .project_box {
+        margin-top: 45px;
+    }
+    .list_project_box {
+        margin-top: 45px;
+        padding-bottom: 90px;
+    }
+    .banner_box h1 {
+        font-size: 18px;
+    }
+    .banner_box img {
         width: 100%;
+        height: auto;
+        min-height: 120px;
+    }
+    .feel_box {
+        padding-top: 40px;
+        padding-bottom: 35px;
+    }
+    .feel_box .img {
+        margin-top: 35px;
+    }
+    .feel_about_intro .size18{
+        font-size: 10px !important;
+    }
+    .message_about_intro {
+        margin-top: 30px;
+    }
+    .message_about_content {
+        margin-top: 40px;
+        padding-bottom: 60px;
+    }
+    
+    .about_page .size32{
+        font-size: 26px !important;
+    }
+    .about_page .size28{
+        font-size: 18px !important;
+    }
+    .about_page .size18{
+        font-size: 14px !important;
+    }
+    .feel_box .img img {
+        max-width: 170px;
+    }
+    .about_operating {
+        padding-bottom:30px;
+        padding-top: 35px;
+    }
+    .about_operating_intro {
+        margin-top: 35px;
+    }
+    .message_about_box {
+        padding-bottom: 25px;
+    }
+    .author.size24 {
+        font-size: 16px !important;
+    }
+    .back_about {
+        margin-top: 50px;
+    }
+    .back_about a {
+        line-height: 45px;
+        height: 45px;
+        width: 160px;
+        padding: 0;
+    }
+    .policy {
+        line-height: 34px;
+        text-align: left !important;
+    }
+    .submit_form {
+        font-size: 14px;
+        padding-bottom: 40px;
+    }
+    .btn_other, .btn_submit {
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .page_project_box {
+        padding-top: 50px;
+    }
+    .page_project_box .project_list {
+        margin-top: 50px;
+    }
+    .page_project_box .item_project {
+        margin-bottom: 80px;
+    }
+    .list_pagination {
+        margin-top: 25px;
     }
 }
 @media (max-width:375px){
@@ -1500,53 +1812,7 @@ h4.panel-title {
     .owl-carousel-cozuchi .owl-next {
         right: 12px;
     }
-    .feel_box {
-        padding-top: 40px;
-        padding-bottom: 35px;
-    }
-    .feel_box .img {
-        margin-top: 35px;
-    }
-    .feel_about_intro .size18{
-        font-size: 10px !important;
-    }
-    .message_about_intro {
-        margin-top: 30px;
-    }
-    .message_about_content {
-        margin-top: 40px;
-        padding-bottom: 60px;
-    }
-    .banner_box h1 {
-        font-size: 18px;
-    }
-    .banner_box img {
-        width: 100%;
-        height: auto;
-        min-height: 120px;
-    }
-    .about_page .size32{
-        font-size: 16px !important;
-    }
-    .about_page .size28{
-        font-size: 14px !important;
-    }
-    .about_page .size18{
-        font-size: 12px !important;
-    }
-    .feel_box .img img {
-        max-width: 170px;
-    }
-    .about_operating {
-        padding-bottom:30px;
-        padding-top: 35px;
-    }
-    .about_operating_intro {
-        margin-top: 35px;
-    }
-    .message_about_box {
-        padding-bottom: 25px;
-    }
+    
     
     .note_chart p .size36 {
         font-size: 24px !important;
@@ -1558,7 +1824,7 @@ h4.panel-title {
         font-size: 12px;
     }
     .project_page .apexcharts-canvas {
-        top: -10px;
+        top: -12px;
     }
     .page_project_box .item_project {
         margin-bottom: 70px;
@@ -1608,19 +1874,14 @@ h4.panel-title {
     .safety_content {
         margin-top: 50px;
     }
-    .safety_item .body {
-        width: calc(100% - 100px);
-    }
-    .safety_item .photo {
-        width: 80px;
-        margin-left: 20px;
-    }
+    
+    
     .safety_item .title {
         font-size: 12px;
         line-height: 16px;
     }
     .safety_intro {
-        font-size: 9px;
+        font-size: 12px;
         line-height: 18px;
     }
     .section_title {
@@ -1629,7 +1890,7 @@ h4.panel-title {
     .view_more_box {
         height: 30px;
         width: 120px;
-        font-size: 9px;
+        font-size: 12px;
         line-height: 30px;
         right: 15px;
         top: -6px;
@@ -1755,9 +2016,7 @@ h4.panel-title {
         font-size: 9px;
         line-height: 20px;
     }
-    .company_infor_box {
-        font-size: 10px;
-    }
+    
     .faq_panel .panel-body {
        font-size: 9px;
     }

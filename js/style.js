@@ -1,4 +1,7 @@
 $(function () {
+    $( window ).resize(function() {
+            window.location.reload(true);
+        });
     if ($('.owl-carousel-project').length > 0) {
         var $owl = $('.owl-carousel-project');
         $owl.owlCarousel({
@@ -12,11 +15,11 @@ $(function () {
             responsive: {
                 0: {
                     items: 1,
-                    margin: 15,
-                    
+                    margin: 20,
+                    stagePadding: 40
                 },
                
-                480: {
+                376: {
                     items: 1,
                     margin: 30,
                     stagePadding: 75

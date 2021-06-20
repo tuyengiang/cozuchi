@@ -203,6 +203,22 @@
 @media (max-width:1024px){
     .block1024{display:block !important}
     .hidden1024{display:none !important}
+    .log_box_mobile a {
+        width: calc(100% - 30px);
+        border-radius: 50px;
+        color: #fff !important;
+        max-width: 280px;
+        height: 60px;
+        line-height: 60px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .btn_login {
+        margin-left: 30px;
+    }
+    .log_box_mobile {
+        padding: 10px;
+    }
 }
 
 

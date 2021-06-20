@@ -51,6 +51,15 @@
         text-align: center;
     }
 }
+@media (max-width:480px){
+    .footer_page {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    .logo_footer {
+        margin-bottom: 30px;
+    }
+}
 @media (max-width:375px){
     .footer_page {
         padding-bottom: 60px;
