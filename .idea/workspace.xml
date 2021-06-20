@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca893069-b7bf-4a99-8418-65de3377032e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC-detail-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC-detail-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC-mypage-01.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC-mypage-01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC-mypage-02.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC-mypage-02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC-mypage-03.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC-mypage-03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pc-mypage-04.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pc-mypage-04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/product-responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/product-responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/responsive.css" afterDir="false" />
-    </list>
+    <list default="true" id="ca893069-b7bf-4a99-8418-65de3377032e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/asset/css/product.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="94">
-              <caret line="324" column="19" lean-forward="true" selection-start-line="324" selection-start-column="19" selection-end-line="324" selection-end-column="19" />
+              <caret line="324" column="19" selection-start-line="324" selection-start-column="19" selection-end-line="324" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -295,12 +284,12 @@
       <workItem from="1624081422936" duration="15748000" />
       <workItem from="1624150643140" duration="1266000" />
       <workItem from="1624198965119" duration="196000" />
-      <workItem from="1624204348656" duration="1036000" />
+      <workItem from="1624204348656" duration="1307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32361000" />
+    <option name="totallyTimeSpent" value="32632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="0" />
@@ -439,7 +428,7 @@
     <entry file="file://$PROJECT_DIR$/asset/css/product.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
-          <caret line="324" column="19" lean-forward="true" selection-start-line="324" selection-start-column="19" selection-end-line="324" selection-end-column="19" />
+          <caret line="324" column="19" selection-start-line="324" selection-start-column="19" selection-end-line="324" selection-end-column="19" />
         </state>
       </provider>
     </entry>
