@@ -21,6 +21,16 @@ $(function () {
                
                 376: {
                     items: 1,
+                    margin: 20,
+                    stagePadding: 40
+                },
+                404: {
+                    items: 1,
+                    margin: 25,
+                    stagePadding: 55
+                },
+                435: {
+                    items: 1,
                     margin: 30,
                     stagePadding: 75
                 },
