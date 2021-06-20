@@ -22,10 +22,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery-simple-mobilemenu.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <!-- Source: https://www.jssor.com/dinhkhamhubt/banner-slider.slider/=edit -->
     <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
     <script src="js/apexchart.js" type="text/javascript"></script>
     <script src="js/style.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
 </head>
 
 <body class="body_home_page">
@@ -34,7 +38,7 @@
             <div class="header__desktop--box">
                 <div class="logo_box">
                     <h1 id="logo">Cozuchi
-                        <a title="Cozuchi" class="navbar-brand" href="#">
+                        <a title="Cozuchi" class="navbar-brand" href="index.html">
                             <img alt="Cozuchi" src="images/logo.png" class="img100">
                         </a>
                     </h1>
@@ -64,7 +68,7 @@
                                 </div>
 
                             </li>
-                            <li class="item"><a class="navigation__link" href="#" title="プロジェクト一覧">プロジェクト一覧</a>
+                            <li class="item"><a class="navigation__link" href="4_pc_fund.html" title="プロジェクト一覧">プロジェクト一覧</a>
                             </li>
                             <li class="item"><a class="navigation__link" href="" title="NEWS">NEWS</a>
                             </li>
@@ -74,8 +78,8 @@
                         </ul>
                     </nav>
                     <div class="log_box">
-                        <a href="#" class="btn btn_signin bgc_main" title="会員登録">会員登録</a>
-                        <a href="#" class="btn btn_login bgc_000" title="ログイン">ログイン</a>
+                        <a href="register.html" class="btn btn_signin bgc_main" title="会員登録">会員登録</a>
+                        <a href="login.html" class="btn btn_login bgc_000" title="ログイン">ログイン</a>
                     </div>
                 </div>
 
@@ -126,25 +130,52 @@
                     style="cursor:default;position:relative;top:0px;left:0px;width:1440px;height:780px;overflow:hidden;">
                     <div>
                         <img data-u="image" height="780" src="./images/slider_1.jpg" />
+                        <div class="slider_content">
+                            <div class="intro_banner">
+                                <p>想いと豊かさを循環させる、カンタン不動産投資</p>
+                               <p> まちづくり不動産クラウドファンディング</p>
+                            </div>
+                            <div class="title_banner">
+                                <img src="./images/banner_title.png" height="85" width="600" alt="">
+                            </div>
+                            <div class="certify">
+                                <img src="./images/certification.png" width="390" height="95" alt="">
+                            </div>
+                        </div>
+                        
                     </div>
                     <div>
                         <img data-u="image" height="780" src="./images/slider_2.jpg" />
+                        <div class="slider_content">
+                            <div class="intro_banner">
+                                <p>想いと豊かさを循環させる、カンタン不動産投資</p>
+                               <p> まちづくり不動産クラウドファンディング</p>
+                            </div>
+                            <div class="title_banner">
+                                <img src="./images/banner_title.png" height="85" width="600" alt="">
+                            </div>
+                            <div class="certify">
+                                <img src="./images/certification.png" width="390" height="95" alt="">
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <img data-u="image" height="780" src="./images/slider_3.jpg" />
-                    </div>
+                   
 
                 </div>
-                <a data-scale="0" title="会員登録(無料)はこちら" class="login-slide" href="#">
-                    会員登録(無料)はこちら
-                    <i class="fas fa-long-arrow-alt-right ml-2"></i>
-                </a>
+                <div data-scale="0" class="login-slide">
+                    <a  title="会員登録(無料)はこちら" class="" href="login.html">
+                        会員登録(無料)はこちら
+                        <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                    </a>
+                </div>
+                
             </div>
         </section>
         <section class="section_box project_box position-relative">
             <div class="section_header">
                 <h2 class="section_title">プロジェクト</h2>
-                <a href="#" class="btn btn_main view_more_box">View more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+                <a href="4_pc_fund.html" class="btn btn_main view_more_box">View more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
             <div class="section_content list_project_box">
                 <div class="bg_project"></div>
@@ -474,12 +505,12 @@
         <section class="section_box service_feature_box ">
             <div class="section_header">
                 <h2 class="section_title color_fff">サービスの特徴</h2>
-                <a href="#" class="btn btn_main view_more_box">View more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+                <a href="PC-searvice-01.html" class="btn btn_main view_more_box">View more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
             <div class="section_content service_feature_content">
                 <div class="list_item">
                     <div class="row">
-                        <div class="col-6 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" data-wow-delay="0.1s">
                             <div class="service_item">
                                 <h3 class="title limit_2line">1万円から 不動産投資が可能</h3>
                                 <div class="border_img">
@@ -490,7 +521,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;" data-wow-delay="0.2s">
                             <div class="service_item">
                                 <h3 class="title limit_2line">「ほったらかし」で、 とっても楽チン</h3>
                                 <div class="border_img">
@@ -501,7 +532,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;" data-wow-delay="0.3s">
                             <div class="service_item">
                                 <h3 class="title limit_2line">分散投資で リスクマネジメント</h3>
                                 <div class="border_img">
@@ -512,7 +543,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-6 col-lg-3">
+                        <div class="col-6 col-md-6 col-lg-3 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;" data-wow-delay="0.4s">
                             <div class="service_item ">
                                 <h3 class="title limit_2line">最短15分で 投資が可能</h3>
                                 <div class="border_img">
@@ -536,7 +567,7 @@
             <div class="section_content strength_content">
                 <div class="container">
                     <div class="strength_list">
-                        <div class="strength_item">
+                        <div class="strength_item wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" data-wow-delay="0.1s">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="title_box d-flex align-items-center">
@@ -561,7 +592,7 @@
 
                             </div>
                         </div>
-                        <div class="strength_item">
+                        <div class="strength_item wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;" data-wow-delay="0.2s">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="title_box d-flex align-items-center">
@@ -586,7 +617,7 @@
 
                             </div>
                         </div>
-                        <div class="strength_item">
+                        <div class="strength_item wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;" data-wow-delay="0.3s">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="title_box d-flex align-items-center">
@@ -624,7 +655,7 @@
             <div class="section_content safety_content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" data-wow-delay="0.1s">
                             <div class="safety_item">
                                 <div class="photo">
                                     <img src="./images/safety_1.png" height="218" width="218" alt="">
@@ -640,7 +671,7 @@
                                 
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;" data-wow-delay="0.2s">
                             <div class="safety_item">
                                 <div class="photo">
                                     <img src="./images/safety_2.png" height="218" width="218" alt="">
@@ -657,7 +688,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;" data-wow-delay="0.3s">
                             <div class="safety_item">
                                 <div class="photo">
                                     <img src="./images/safety_3.png" height="218" width="218" alt="">
@@ -684,7 +715,7 @@
             <div class="section_content flow_content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" data-wow-delay="0.1s">
                             <fieldset class="fieldset_flow_item">
                                 <legend align="center">01</legend>
                                 <div class="desk_box">
@@ -705,7 +736,7 @@
                                 
                             </fieldset>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;" data-wow-delay="0.2s">
                             <fieldset class="fieldset_flow_item">
                                 <legend align="center">02</legend>
                                 <div class="desk_box">
@@ -726,7 +757,7 @@
                                 </div>
                             </fieldset>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;" data-wow-delay="0.3s">
                             <fieldset class="fieldset_flow_item">
                                 <legend align="center">03</legend>
                                 <div class="desk_box">
@@ -920,7 +951,7 @@
         </section>
         <section class="section_box company_box ">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;" data-wow-delay="0.1s">
                     <div class="company_infor_box">
                         <h2 class="section_title">よくある質問</h2>
                         <div class="company_infor">
@@ -962,7 +993,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 wow fadeInLeft animated" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;" data-wow-delay="0.2s">
                     <div class="map_box">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7986707022665!2d105.81378231440696!3d21.000705994112543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9b3f23b42b%3A0x49fa01aaa06d239b!2sVinhomes%20Royal%20City!5e0!3m2!1svi!2s!4v1624053413260!5m2!1svi!2s" width="680" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
@@ -1008,8 +1039,8 @@
            $height = 245;
            $width = 245;
         }else if(windowsize < 768 && windowsize > 375){
-            $height =  300;
-            $width = 300;
+            $height =  240;
+            $width = 240;
         }else if(windowsize <= 375){
             $height =  200;
             $width = 200;
@@ -1043,11 +1074,17 @@
                     },
                     foreColor: '#e37467',
                     dataLabels: {
+                        name: {
+                            color: "#e37467",
+                            formatter: function () {
+                                return ["達成率"];
+                            }
+                        },
                         value: {
-                            foreColor: '#e37467',
-                            color: '#e37467',
+                            color: "#e37467",
                             fontSize: '22px'
-                        }
+                        },
+                        
                     }
                 }
             },
@@ -1081,11 +1118,17 @@
                     },
                     foreColor: '#f1c846',
                     dataLabels: {
+                        name: {
+                            color: "#f1c846",
+                            formatter: function () {
+                                return ["達成率"];
+                            }
+                        },
                         value: {
-                            foreColor: '#f1c846',
-                            color: '#f1c846',
+                            color: "#f1c846",
                             fontSize: '22px'
-                        }
+                        },
+                        
                     }
                 }
             },

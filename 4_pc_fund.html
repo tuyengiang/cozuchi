@@ -417,9 +417,12 @@
         if (windowsize >= 768) {
            $height = 245;
            $width = 245;
-        }else if(windowsize < 768 && windowsize > 375){
-            $height =  300;
-            $width = 300;
+        }else if(windowsize < 768 && windowsize > 480){
+            $height =  240;
+            $width = 240;
+        }else if(windowsize <= 480 && windowsize > 375){
+            $height =  220;
+            $width = 220;
         }else if(windowsize <= 375){
             $height =  200;
             $width = 200;
@@ -451,13 +454,19 @@
                             blur: 2
                         }
                     },
-                    foreColor: '#e37467',
+                    
                     dataLabels: {
+                        name: {
+                            color: "#e37467",
+                            formatter: function () {
+                                return ["達成率"];
+                            }
+                        },
                         value: {
-                            foreColor: '#e37467',
-                            color: '#e37467',
+                            color: "#e37467",
                             fontSize: '22px'
-                        }
+                        },
+                      
                     }
                 }
             },
@@ -490,12 +499,19 @@
                         }
                     },
                     foreColor: '#f1c846',
+                    
                     dataLabels: {
+                        name: {
+                            color: "#f1c846",
+                            formatter: function () {
+                                return ["達成率"];
+                            }
+                        },
                         value: {
-                            foreColor: '#f1c846',
-                            color: '#f1c846',
+                            color: "#f1c846",
                             fontSize: '22px'
-                        }
+                        },
+                        
                     }
                 }
             },

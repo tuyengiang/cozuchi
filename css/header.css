@@ -8,7 +8,7 @@
     font-size: 12px;
     font-weight: bold;
     float: left;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 #logo {
     display: inline-block;
@@ -38,7 +38,7 @@
 
 #logo img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .header__desktop--box {
@@ -150,6 +150,55 @@
 }
 .btn_login {
     margin-left: 20px;
+}
+@media (max-width:1315px){
+    .log_box a {
+        width: 110px;
+    }
+    .btn_login {
+        margin-left: 10px;
+    }
+    .main__menu--list .item a {
+        padding: 12px 8px;
+    }
+}
+@media (max-width:1200px){
+    .description_page {
+        font-size: 11px;
+    }
+    #logo {
+        width: 220px;
+    }
+    .logo_box {
+        width: 220px;
+    }
+    .main__menu--list .item a {
+        font-size: 15px;
+    }
+    .header__desktop--box {
+        padding: 35px 10px;
+    }
+}
+
+@media (max-width:1100px){
+    .log_box a {
+        width: 100px;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+    #logo {
+        width: 200px;
+    }
+    .logo_box {
+        width: 200px;
+    }
+    .description_page {
+        font-size: 10px;
+    }
+    .main__menu--list .item a {
+        font-size: 14px;
+    }
 }
 @media (max-width:1024px){
     .block1024{display:block !important}

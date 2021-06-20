@@ -13,8 +13,9 @@ $(function () {
                 0: {
                     items: 1,
                     margin: 15,
-                    stagePadding: 50
+                    
                 },
+               
                 480: {
                     items: 1,
                     margin: 30,
@@ -39,6 +40,8 @@ $(function () {
             dots: false,
             margin: 50,
             autoplay: false,
+            animateOut: 'fadeOut',
+             animateIn: 'fadeIn',
             responsiveClass: true,
             responsive: {
                 0: {
