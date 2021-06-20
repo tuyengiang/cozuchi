@@ -14,6 +14,21 @@ jQuery(document).ready(function ($) {
     });
     activeTab($('.tab-wrapper ul li:first-child'));
 
+    //tab chart item
+    function activeTabChart(obj) {
+        $('.chart-tab ul li').removeClass('active');
+        $(obj).addClass('active');
+        var id = $(obj).find('a').attr('href');
+        $('.tab-chart-item').hide();
+        $(id).show();
+    }
+
+    $('.chart-tab ul li').click(function () {
+        activeTabChart(this);
+        return false;
+    });
+    activeTabChart($('.chart-tab ul li:first-child'));
+
     //active gallery product
     $('#thumb_img img:first-child').addClass('active');
 });

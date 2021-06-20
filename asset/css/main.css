@@ -413,3 +413,44 @@ select.form-control.tableSelect {
 .table-4 tr td {
     text-align: left;
 }
+
+#area-chart,
+#line-chart,
+#bar-chart,
+#stacked,
+#pie-chart {
+    min-height: 250px;
+}
+
+.box-chart {
+    width: 100%;
+    display: inline-block;
+    border: 8px solid #ffe5e2;
+    border-bottom: 0px !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.chart-tab {
+    background: #ffe5e2;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.chart-tab ul li {
+    list-style: none;
+    width: calc(100% / 2);
+    float: left;
+    background: #edb4ad;
+    padding: 15px;
+    border-radius: 0px 0 10px 10px;
+}
+
+.chart-tab {
+    background: #ffe5e2;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+.chart-tab ul li.active {
+    background: #ffe5e2;
+}
