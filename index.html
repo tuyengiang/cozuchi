@@ -3,15 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="keywords" content="Cozuchi">
     <meta name="author" content="Cozuchi">
     <title>Cozuchi</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/css/all.min.css">
-    
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/header.css">
@@ -26,10 +25,400 @@
     <!-- Source: https://www.jssor.com/dinhkhamhubt/banner-slider.slider/=edit -->
     <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
     <script src="js/apexchart.js" type="text/javascript"></script>
+    <script src="js/jquery.sublimeSlideshow.js"></script>
+    </script>
     <script src="js/style.js"></script>
     <script type="text/javascript">
         new WOW().init();
     </script>
+    <style type="text/css">
+        @-webkit-keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-in;
+                -moz-animation-timing-function: ease-in;
+                -ms-animation-timing-function: ease-in;
+                -o-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            21.666666666666664% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-out;
+                -moz-animation-timing-function: ease-out;
+                -ms-animation-timing-function: ease-out;
+                -o-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-moz-keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-in;
+                -moz-animation-timing-function: ease-in;
+                -ms-animation-timing-function: ease-in;
+                -o-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            21.666666666666664% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-out;
+                -moz-animation-timing-function: ease-out;
+                -ms-animation-timing-function: ease-out;
+                -o-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-ms-keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-in;
+                -moz-animation-timing-function: ease-in;
+                -ms-animation-timing-function: ease-in;
+                -o-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            21.666666666666664% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-out;
+                -moz-animation-timing-function: ease-out;
+                -ms-animation-timing-function: ease-out;
+                -o-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-o-keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-in;
+                -moz-animation-timing-function: ease-in;
+                -ms-animation-timing-function: ease-in;
+                -o-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            21.666666666666664% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-out;
+                -moz-animation-timing-function: ease-out;
+                -ms-animation-timing-function: ease-out;
+                -o-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes imageAnimation {
+            0% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-in;
+                -moz-animation-timing-function: ease-in;
+                -ms-animation-timing-function: ease-in;
+                -o-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            21.666666666666664% {
+                opacity: 0;
+                -webkit-animation-timing-function: ease-out;
+                -moz-animation-timing-function: ease-out;
+                -ms-animation-timing-function: ease-out;
+                -o-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-webkit-keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            19.166666666666664% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-moz-keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            19.166666666666664% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-ms-keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            19.166666666666664% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-o-keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            19.166666666666664% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes titleAnimation {
+            0% {
+                opacity: 0;
+            }
+            8.333333333333332% {
+                opacity: 1;
+            }
+            16.666666666666664% {
+                opacity: 1;
+            }
+            19.166666666666664% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        .sm-slider,
+        .sm-slider:after {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /* position: fixed; 
+            width: 100%;
+             height: 100%; 
+           
+            top: 0px;
+            left: 0px;
+            z-index: -1;*/
+            height: 780px;
+        }
+        /* .sm-slider:after {
+            content: '';
+            background: transparent url(images/pattern.png) repeat top left;
+            z-index: 0;
+        }
+         */
+        
+        .sm-slider li span {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: none;
+            opacity: 0;
+            z-index: 0;
+            -webkit-animation: imageAnimation 36s linear infinite 0s;
+            -moz-animation: imageAnimation 36s linear infinite 0s;
+            -ms-animation: imageAnimation 36s linear infinite 0s;
+            -o-animation: imageAnimation 36s linear infinite 0s;
+            animation: imageAnimation 36s linear infinite 0s;
+        }
+        
+        .sm-slider li>div {
+            z-index: 1000;
+            position: absolute;
+            bottom: 30px;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            -webkit-animation: titleAnimation 36s linear infinite 0s;
+            -moz-animation: titleAnimation 36s linear infinite 0s;
+            -ms-animation: titleAnimation 36s linear infinite 0s;
+            -o-animation: titleAnimation 36s linear infinite 0s;
+            animation: titleAnimation 36s linear infinite 0s;
+        }
+        
+        .sm-slider li:nth-child(1) span {
+            background-image: url('./images/slider_1.jpg');
+            -webkit-animation-delay: 0s;
+            -moz-animation-delay: 0s;
+            -ms-animation-delay: 0s;
+            -o-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+        
+        .sm-slider li:nth-child(1) div {
+            -webkit-animation-delay: 0s;
+            -moz-animation-delay: 0s;
+            -ms-animation-delay: 0s;
+            -o-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+        
+        .sm-slider li:nth-child(2) span {
+            background-image: url('./images/slider_2.jpg');
+            -webkit-animation-delay: 6s;
+            -moz-animation-delay: 6s;
+            -ms-animation-delay: 6s;
+            -o-animation-delay: 6s;
+            animation-delay: 6s;
+        }
+        
+        .sm-slider li:nth-child(2) div {
+            -webkit-animation-delay: 6s;
+            -moz-animation-delay: 6s;
+            -ms-animation-delay: 6s;
+            -o-animation-delay: 6s;
+            animation-delay: 6s;
+        }
+        
+        .sm-slider li:nth-child(3) span {
+            background-image: url('./images/slider_1.jpg');
+            -webkit-animation-delay: 12s;
+            -moz-animation-delay: 12s;
+            -ms-animation-delay: 12s;
+            -o-animation-delay: 12s;
+            animation-delay: 12s;
+        }
+        
+        .sm-slider li:nth-child(3) div {
+            -webkit-animation-delay: 12s;
+            -moz-animation-delay: 12s;
+            -ms-animation-delay: 12s;
+            -o-animation-delay: 12s;
+            animation-delay: 12s;
+        }
+        
+        .sm-slider li:nth-child(4) span {
+            background-image: url('./images/slider_2.jpg');
+            -webkit-animation-delay: 18s;
+            -moz-animation-delay: 18s;
+            -ms-animation-delay: 18s;
+            -o-animation-delay: 18s;
+            animation-delay: 18s;
+        }
+        
+        .sm-slider li:nth-child(4) div {
+            -webkit-animation-delay: 18s;
+            -moz-animation-delay: 18s;
+            -ms-animation-delay: 18s;
+            -o-animation-delay: 18s;
+            animation-delay: 18s;
+        }
+        
+        .sm-slider li:nth-child(5) span {
+            background-image: url('./images/slider_1.jpg');
+            -webkit-animation-delay: 24s;
+            -moz-animation-delay: 24s;
+            -ms-animation-delay: 24s;
+            -o-animation-delay: 24s;
+            animation-delay: 24s;
+        }
+        
+        .sm-slider li:nth-child(5) div {
+            -webkit-animation-delay: 24s;
+            -moz-animation-delay: 24s;
+            -ms-animation-delay: 24s;
+            -o-animation-delay: 24s;
+            animation-delay: 24s;
+        }
+        
+        .sm-slider li:nth-child(6) span {
+            background-image: url('./images/slider_2.jpg');
+            -webkit-animation-delay: 30s;
+            -moz-animation-delay: 30s;
+            -ms-animation-delay: 30s;
+            -o-animation-delay: 30s;
+            animation-delay: 30s;
+        }
+        
+        .sm-slider li:nth-child(6) div {
+            -webkit-animation-delay: 30s;
+            -moz-animation-delay: 30s;
+            -ms-animation-delay: 30s;
+            -o-animation-delay: 30s;
+            animation-delay: 30s;
+        }
+    </style>
 </head>
 
 <body class="body_home_page">
@@ -46,7 +435,7 @@
                         まちづくり不動産クラウドファンディング
                     </div>
                 </div>
-                
+
                 <div class="menu_box d-flex">
                     <nav class="main__menu" id="main__menu">
                         <ul class="main__menu--list list_style_none">
@@ -99,14 +488,14 @@
                 <li class="item relative">
                     <a class="" data-toggle="dropdown" href="javascript:void(0);" title="サービスについて">サービスについて
                         </a>
-                        <ul class="submenu">
-                            <li>
-                                <a class="navigation__link" href="#" title="COZUCHI の仕組み">COZUCHI の仕組み</a>
-                            </li>
-                            <li>
-                                <a class="navigation__link" href="#" title="安心・安全な投資の取り組み">安心・安全な投資の取り組み</a>
-                            </li>
-                        </ul>
+                    <ul class="submenu">
+                        <li>
+                            <a class="navigation__link" href="#" title="COZUCHI の仕組み">COZUCHI の仕組み</a>
+                        </li>
+                        <li>
+                            <a class="navigation__link" href="#" title="安心・安全な投資の取り組み">安心・安全な投資の取り組み</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="item"><a class="navigation__link" href="#" title="プロジェクト一覧">プロジェクト一覧</a>
                 </li>
@@ -116,27 +505,24 @@
                 <li class="item"><a class="navigation__link" href="" title="お問い合わせ">お問い合わせ</a></li>
                 <li class="item log_box_mobile d-flex ">
                     <a href="register.html" class="btn btn_signin bgc_main" title="会員登録">会員登録</a>
-                        <a href="login.html" class="btn btn_login bgc_000" title="ログイン">ログイン</a>
+                    <a href="login.html" class="btn btn_login bgc_000" title="ログイン">ログイン</a>
                 </li>
             </ul>
         </div>
     </header>
     <main id="main" class="main_page">
-        <section class="section_box slider_box position-relative" id="">
-            <div id="jssor_1"
-                style="position:relative;margin:0 auto;top:0px;left:0px;width:1440px;height:780px;overflow:hidden;visibility:hidden;">
+        <section class="section_box slider_box position-relative d-none" id="">
+            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1440px;height:780px;overflow:hidden;visibility:hidden;">
                 <!-- Loading Screen -->
-                <div data-u="loading"
-                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-position:50% 50%;background-repeat:no-repeat;background-image:url('images/double-tail-spin-x.svg');background-color:rgba(0, 0, 0, 0.7);background-size:40px 40px;">
+                <div data-u="loading" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-position:50% 50%;background-repeat:no-repeat;background-image:url('images/double-tail-spin-x.svg');background-color:rgba(0, 0, 0, 0.7);background-size:40px 40px;">
                 </div>
-                <div class="u_slide" data-u="slides"
-                    style="cursor:default;position:relative;top:0px;left:0px;width:1440px;height:780px;overflow:hidden;">
+                <div class="u_slide" data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1440px;height:780px;overflow:hidden;">
                     <div>
                         <img class="img_slider" data-u="image" src="./images/slider_1.jpg" />
                         <div class="slider_content">
                             <div class="intro_banner">
                                 <p>想いと豊かさを循環させる、カンタン不動産投資</p>
-                               <p> まちづくり不動産クラウドファンディング</p>
+                                <p> まちづくり不動産クラウドファンディング</p>
                             </div>
                             <div class="title_banner">
                                 <img src="./images/banner_title.png" height="85" width="600" alt="">
@@ -145,14 +531,14 @@
                                 <img src="./images/certification.png" width="390" height="95" alt="">
                             </div>
                         </div>
-                        
+
                     </div>
                     <div>
                         <img class="img_slider" data-u="image" src="./images/slider_2.jpg" />
                         <div class="slider_content">
                             <div class="intro_banner">
                                 <p>想いと豊かさを循環させる、カンタン不動産投資</p>
-                               <p> まちづくり不動産クラウドファンディング</p>
+                                <p> まちづくり不動産クラウドファンディング</p>
                             </div>
                             <div class="title_banner">
                                 <img src="./images/banner_title.png" height="85" width="600" alt="">
@@ -161,20 +547,192 @@
                                 <img src="./images/certification.png" width="390" height="95" alt="">
                             </div>
                         </div>
-                        
+
                     </div>
-                   
+
 
                 </div>
                 <div data-scale="0" class="login-slide">
-                    <a  title="会員登録(無料)はこちら" class="" href="login.html">
+                    <a title="会員登録(無料)はこちら" class="" href="login.html">
                         会員登録(無料)はこちら
                         <i class="fas fa-long-arrow-alt-right ml-2"></i>
                     </a>
                 </div>
-                
+
             </div>
         </section>
+        <section class="section_box slider_box position-relative" id="">
+            <ul class="sm-slider">
+                <li>
+                    <span></span>
+                    <div>
+                        <div class="slider_content d-flex justify-content-between">
+                            <div class="left_slider">
+                                <div class="intro_banner">
+                                    <p>想いと豊かさを循環させる、カンタン不動産投資</p>
+                                    <p> まちづくり不動産クラウドファンディング</p>
+                                </div>
+                                <div class="title_banner">
+                                    <img src="./images/banner_title.png" height="85" width="600" alt="">
+                                </div>
+                            </div>
+
+                            <div class="right_slider">
+                                <div class="certify">
+                                    <img src="./images/certification.png" width="390" height="95" alt="">
+                                </div>
+                                <div class="login-slide">
+                                    <a title="会員登録(無料)はこちら" class="" href="login.html">
+                                        会員登録(無料)はこちら
+                                        <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li> <span></span>
+                    <div>
+                        <div class="slider_content d-flex justify-content-between">
+                            <div class="left_slider">
+                                <div class="intro_banner">
+                                    <p>想いと豊かさを循環させる、カンタン不動産投資</p>
+                                    <p> まちづくり不動産クラウドファンディング</p>
+                                </div>
+                                <div class="title_banner">
+                                    <img src="./images/banner_title.png" height="85" width="600" alt="">
+                                </div>
+                            </div>
+
+                            <div class="right_slider">
+                                <div class="certify">
+                                    <img src="./images/certification.png" width="390" height="95" alt="">
+                                </div>
+                                <div class="login-slide">
+                                    <a title="会員登録(無料)はこちら" class="" href="login.html">
+                                        会員登録(無料)はこちら
+                                        <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li> <span></span>
+                    <div>
+                        <div class="slider_content d-flex justify-content-between">
+                            <div class="left_slider">
+                                <div class="intro_banner">
+                                    <p>想いと豊かさを循環させる、カンタン不動産投資</p>
+                                    <p> まちづくり不動産クラウドファンディング</p>
+                                </div>
+                                <div class="title_banner">
+                                    <img src="./images/banner_title.png" height="85" width="600" alt="">
+                                </div>
+                            </div>
+
+                            <div class="right_slider">
+                                <div class="certify">
+                                    <img src="./images/certification.png" width="390" height="95" alt="">
+                                </div>
+                                <div class="login-slide">
+                                    <a title="会員登録(無料)はこちら" class="" href="login.html">
+                                        会員登録(無料)はこちら
+                                        <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li> <span></span>
+                    <div>
+                        <div class="slider_content d-flex justify-content-between">
+                            <div class="left_slider">
+                                <div class="intro_banner">
+                                    <p>想いと豊かさを循環させる、カンタン不動産投資</p>
+                                    <p> まちづくり不動産クラウドファンディング</p>
+                                </div>
+                                <div class="title_banner">
+                                    <img src="./images/banner_title.png" height="85" width="600" alt="">
+                                </div>
+                            </div>
+
+                            <div class="right_slider">
+                                <div class="certify">
+                                    <img src="./images/certification.png" width="390" height="95" alt="">
+                                </div>
+                                <div class="login-slide">
+                                    <a title="会員登録(無料)はこちら" class="" href="login.html">
+                                        会員登録(無料)はこちら
+                                        <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li> <span></span>
+                    <div>
+                        <div class="slider_content d-flex justify-content-between">
+                            <div class="left_slider">
+                                <div class="intro_banner">
+                                    <p>想いと豊かさを循環させる、カンタン不動産投資</p>
+                                    <p> まちづくり不動産クラウドファンディング</p>
+                                </div>
+                                <div class="title_banner">
+                                    <img src="./images/banner_title.png" height="85" width="600" alt="">
+                                </div>
+                            </div>
+
+                            <div class="right_slider">
+                                <div class="certify">
+                                    <img src="./images/certification.png" width="390" height="95" alt="">
+                                </div>
+                                <div class="login-slide">
+                                    <a title="会員登録(無料)はこちら" class="" href="login.html">
+                                        会員登録(無料)はこちら
+                                        <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li> <span></span>
+                    <div>
+                        <div class="slider_content d-flex justify-content-between">
+                            <div class="left_slider">
+                                <div class="intro_banner">
+                                    <p>想いと豊かさを循環させる、カンタン不動産投資</p>
+                                    <p> まちづくり不動産クラウドファンディング</p>
+                                </div>
+                                <div class="title_banner">
+                                    <img src="./images/banner_title.png" height="85" width="600" alt="">
+                                </div>
+                            </div>
+
+                            <div class="right_slider">
+                                <div class="certify">
+                                    <img src="./images/certification.png" width="390" height="95" alt="">
+                                </div>
+                                <div class="login-slide">
+                                    <a title="会員登録(無料)はこちら" class="" href="login.html">
+                                        会員登録(無料)はこちら
+                                        <i class="fas fa-long-arrow-alt-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+
         <section class="section_box project_box position-relative">
             <div class="section_header">
                 <h2 class="section_title">プロジェクト</h2>
@@ -221,8 +779,7 @@
                                                 10,000,000 <span class="size14">円</span>
                                             </div>
                                         </div>
-                                        <div
-                                            class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
+                                        <div class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
                                             <div class="">
                                                 募集金額
                                             </div>
@@ -275,8 +832,7 @@
                                             </a>
                                         </div>
                                         <div class="type_item blue">
-                                            <img src="./images/type_blue.png" width="19" height="17" alt=""
-                                                class="icon">
+                                            <img src="./images/type_blue.png" width="19" height="17" alt="" class="icon">
                                             <span>キャピタルゲイン型</span>
                                         </div>
                                     </div>
@@ -295,8 +851,7 @@
                                                 10,000,000 <span class="size14">円</span>
                                             </div>
                                         </div>
-                                        <div
-                                            class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
+                                        <div class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
                                             <div class="">
                                                 募集金額
                                             </div>
@@ -309,8 +864,7 @@
                                                 募集期間
                                             </div>
                                             <div class="total size14 d-flex">
-                                                <div class="tag blue">先着</div> <span
-                                                    class="size18 font-weight-bold">5/20 -
+                                                <div class="tag blue">先着</div> <span class="size18 font-weight-bold">5/20 -
                                                     5/21</span>
                                             </div>
                                         </div>
@@ -349,8 +903,7 @@
                                             </a>
                                         </div>
                                         <div class="type_item blue">
-                                            <img src="./images/type_blue.png" width="19" height="17" alt=""
-                                                class="icon">
+                                            <img src="./images/type_blue.png" width="19" height="17" alt="" class="icon">
                                             <span>キャピタルゲイン型</span>
                                         </div>
                                     </div>
@@ -369,8 +922,7 @@
                                                 10,000,000 <span class="size14">円</span>
                                             </div>
                                         </div>
-                                        <div
-                                            class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
+                                        <div class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
                                             <div class="">
                                                 募集金額
                                             </div>
@@ -383,8 +935,7 @@
                                                 募集期間
                                             </div>
                                             <div class="total size14 d-flex">
-                                                <div class="tag blue">先着</div> <span
-                                                    class="size18 font-weight-bold">5/20 -
+                                                <div class="tag blue">先着</div> <span class="size18 font-weight-bold">5/20 -
                                                     5/21</span>
                                             </div>
                                         </div>
@@ -423,8 +974,7 @@
                                             </a>
                                         </div>
                                         <div class="type_item blue">
-                                            <img src="./images/type_blue.png" width="19" height="17" alt=""
-                                                class="icon">
+                                            <img src="./images/type_blue.png" width="19" height="17" alt="" class="icon">
                                             <span>キャピタルゲイン型</span>
                                         </div>
                                     </div>
@@ -443,8 +993,7 @@
                                                 10,000,000 <span class="size14">円</span>
                                             </div>
                                         </div>
-                                        <div
-                                            class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
+                                        <div class="d-flex align-items-center justify-content-between pb-2 border-bottom-ddd">
                                             <div class="">
                                                 募集金額
                                             </div>
@@ -457,8 +1006,7 @@
                                                 募集期間
                                             </div>
                                             <div class="total size14 d-flex">
-                                                <div class="tag blue">先着</div> <span
-                                                    class="size18 font-weight-bold">5/20 -
+                                                <div class="tag blue">先着</div> <span class="size18 font-weight-bold">5/20 -
                                                     5/21</span>
                                             </div>
                                         </div>
@@ -498,8 +1046,7 @@
                     </div>
                     <div class="about_intro">
                         <div class="semni_bold">
-                            COZUCHIは「想いと豊かさを循環させる不動産投資」をコンセプトとした、ミドルリターンの不動産投資型のクラウドファンディングサービスです。
-                            各プロジェクトごとに共同出資者を募集し、不動産事業で得られた賃料や売却利益を出資者のみなさまへ還元します。リスクの低い優先劣後構造で、債権や社債等より高いリターンの提供と実現を目指しています。
+                            COZUCHIは「想いと豊かさを循環させる不動産投資」をコンセプトとした、ミドルリターンの不動産投資型のクラウドファンディングサービスです。 各プロジェクトごとに共同出資者を募集し、不動産事業で得られた賃料や売却利益を出資者のみなさまへ還元します。リスクの低い優先劣後構造で、債権や社債等より高いリターンの提供と実現を目指しています。
                         </div>
                     </div>
                 </div>
@@ -583,8 +1130,7 @@
 
                                     </div>
                                     <div class="intro">
-                                        不動産投資型のクラウドファンディングにおける配当は、優先出資者に優先的に配当される一方で、配当利回りに上限が設定されるのが一般的です。
-                                        しかし、COZUCHIでは優先出資者に優先的に配当されることはもちろん、さらに配当利回りに上限無くフェアに利益を分配することで、ローリスクな商品設計を重要視しながらも、出資者の皆様により高いリターンの実現を目指します。
+                                        不動産投資型のクラウドファンディングにおける配当は、優先出資者に優先的に配当される一方で、配当利回りに上限が設定されるのが一般的です。 しかし、COZUCHIでは優先出資者に優先的に配当されることはもちろん、さらに配当利回りに上限無くフェアに利益を分配することで、ローリスクな商品設計を重要視しながらも、出資者の皆様により高いリターンの実現を目指します。
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -608,8 +1154,7 @@
 
                                     </div>
                                     <div class="intro">
-                                        COZUCHIでは物件の賃料収入や売却想定価格等を十分に吟味し、かつ優先劣後構造を採用することでローリスクを実現しながら、利率4～12％程度のミドル〜ハイリターンを実現。
-                                        「商品設計はローリスク、リターンはできるだけ大きく」の実現を目指している点が最大の特徴です。
+                                        COZUCHIでは物件の賃料収入や売却想定価格等を十分に吟味し、かつ優先劣後構造を採用することでローリスクを実現しながら、利率4～12％程度のミドル〜ハイリターンを実現。 「商品設計はローリスク、リターンはできるだけ大きく」の実現を目指している点が最大の特徴です。
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -633,8 +1178,7 @@
 
                                     </div>
                                     <div class="intro">
-                                        COZUCHIには、様々な不動産事業者が参加しており、各事業者がそれぞれ強みを持つ領域の商品を商品化しています。
-                                        このため、区分所有マンション、区分店舗、一棟ビル、一棟賃貸マンション、ホテル、リゾート開発、再開発事業等の多種多様な不動産投資商品があり、出資者それぞれの投資方針に合わせた、多様な商品を扱っていることが大きな特徴です。
+                                        COZUCHIには、様々な不動産事業者が参加しており、各事業者がそれぞれ強みを持つ領域の商品を商品化しています。 このため、区分所有マンション、区分店舗、一棟ビル、一棟賃貸マンション、ホテル、リゾート開発、再開発事業等の多種多様な不動産投資商品があり、出資者それぞれの投資方針に合わせた、多様な商品を扱っていることが大きな特徴です。
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -671,7 +1215,7 @@
                                         優先劣後構造のうち、優先出資部分は出資者のみなさまにご出資頂き、劣後部分は事業者が出資致します。事業者の劣後出資は10～60％程度となっており、劣後部分が全額棄損するまで、みなさまの優先出資が元本棄損することはありません。
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="col-lg-4 wow fadeIn animated" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;" data-wow-delay="0.6s">
@@ -684,9 +1228,7 @@
                                         <span>ローリスクを実現する ための様々な取り組み</span>
                                     </h3>
                                     <div class="safety_intro">
-                                        リーシングリスクが大きいと判断したものに関しては、マスターリースなどを締結。
-                                        キャピタル型は物件の買取保証をいれるなどをし、イグジットリスクをヘッジします。
-                                        その他、各プロジェクトに応じた、リスクマネジメント手法を積極的に取り入れることで、リスクの低い商品設計をしております。
+                                        リーシングリスクが大きいと判断したものに関しては、マスターリースなどを締結。 キャピタル型は物件の買取保証をいれるなどをし、イグジットリスクをヘッジします。 その他、各プロジェクトに応じた、リスクマネジメント手法を積極的に取り入れることで、リスクの低い商品設計をしております。
                                     </div>
                                 </div>
                             </div>
@@ -701,8 +1243,7 @@
                                         <span> 安心の実績</span>
                                     </h3>
                                     <div class="safety_intro">
-                                        当社では「WARASHIBE」の前身となる不動産特定共同事業法を活用した事業を
-                                        2008年から2018年まで総額約9億円を運用しており、元金毀損/配当遅延は一度もありません。2019年から運用を開始した不動産特定共同事業法の電子取引「WARASHIBE」においても、総ファンド数21、総額約12億円を運用しており、同様に元金毀損/配当遅延は一度もありません。
+                                        当社では「WARASHIBE」の前身となる不動産特定共同事業法を活用した事業を 2008年から2018年まで総額約9億円を運用しており、元金毀損/配当遅延は一度もありません。2019年から運用を開始した不動産特定共同事業法の電子取引「WARASHIBE」においても、総ファンド数21、総額約12億円を運用しており、同様に元金毀損/配当遅延は一度もありません。
                                     </div>
                                 </div>
                             </div>
@@ -722,7 +1263,7 @@
                             <fieldset class="fieldset_flow_item">
                                 <legend align="center">01</legend>
                                 <div class="desk_box">
-                                    
+
                                     <p class="fieldset_title">会員登録</p>
                                     <div class="photo d-none d-lg-block">
                                         <img src="./images/flow_1.png" alt="">
@@ -736,14 +1277,14 @@
                                         <img src="./images/flow_1.png" alt="">
                                     </div>
                                 </div>
-                                
+
                             </fieldset>
                         </div>
                         <div class="col-lg-4 wow fadeIn animated" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;" data-wow-delay="0.6s">
                             <fieldset class="fieldset_flow_item">
                                 <legend align="center">02</legend>
                                 <div class="desk_box">
-                                   
+
                                     <p class="fieldset_title">投資家登録</p>
                                     <div class="photo d-none d-lg-block">
                                         <img src="./images/flow_2.png" alt="">
@@ -752,7 +1293,7 @@
                                         お名前とメールアドレスだけで簡単登録！プロジェクトの詳細ページが見られたり、プロジェクトの公開情報をいち早く受け取る事が可能です。
                                     </div>
                                 </div>
-                               
+
                                 <div class="mobile_box d-block d-lg-none">
                                     <div class="photo">
                                         <img src="./images/flow_2.png" alt="">
@@ -764,7 +1305,7 @@
                             <fieldset class="fieldset_flow_item">
                                 <legend align="center">03</legend>
                                 <div class="desk_box">
-                                   
+
                                     <p class="fieldset_title">投資開始</p>
                                     <div class="photo d-none d-lg-block">
                                         <img src="./images/flow_3.png" alt="">
@@ -773,7 +1314,7 @@
                                         お名前とメールアドレスだけで簡単登録！プロジェクトの詳細ページが見られたり、プロジェクトの公開情報をいち早く受け取る事が可能です。
                                     </div>
                                 </div>
-                                
+
                                 <div class="mobile_box d-block d-lg-none">
                                     <div class="photo">
                                         <img src="./images/flow_3.png" alt="">
@@ -800,9 +1341,7 @@
                         <div class="owl-carousel owl-carousel-cozuchi owl-carousel-voice">
                             <div class="voice_item">
                                 <div class="intro">
-                                    ファイナンシャルプランナーに相談し、NISAをやっていますが、自分の貯金をもっと有効に運用したいとずっと思っていました。
-                                    なかなか他の投資に踏み出す勇気はなく、友人の不動産は目に見えるものだから安心感が他の投資と違うと聞いてCOZUCHIに出資しようと思いました。
-                                    今後も貯金分を積極的に投資していきたいと思っています。
+                                    ファイナンシャルプランナーに相談し、NISAをやっていますが、自分の貯金をもっと有効に運用したいとずっと思っていました。 なかなか他の投資に踏み出す勇気はなく、友人の不動産は目に見えるものだから安心感が他の投資と違うと聞いてCOZUCHIに出資しようと思いました。 今後も貯金分を積極的に投資していきたいと思っています。
                                 </div>
                                 <div class="author">
                                     36歳　女性
@@ -810,9 +1349,7 @@
                             </div>
                             <div class="voice_item">
                                 <div class="intro">
-                                    COZUCHIの魅力は想定利回りが良いことだと思います。投資なのでリスクはあリますが、物件の詳細情報や、ファンドをおすすめする理由が解りやすく書かれているので、
-                                    行ったことがない地域の物件でも投資するかどうか判断できるのが安心できるポイントだと思います。
-                                    1万円など少額から始められるため投資のハードルも低いです。投資するファンドを分けることによってリスク分散もできそうです。
+                                    COZUCHIの魅力は想定利回りが良いことだと思います。投資なのでリスクはあリますが、物件の詳細情報や、ファンドをおすすめする理由が解りやすく書かれているので、 行ったことがない地域の物件でも投資するかどうか判断できるのが安心できるポイントだと思います。 1万円など少額から始められるため投資のハードルも低いです。投資するファンドを分けることによってリスク分散もできそうです。
                                 </div>
                                 <div class="author">
                                     34歳　男性
@@ -820,8 +1357,7 @@
                             </div>
                             <div class="voice_item">
                                 <div class="intro">
-                                    投資経験はまったくないですが、ずっと投資に興味を持っていました。会員登録がスマホで簡単にでき、出資も簡単にできるたのがとても便利だと思いました。
-                                    投資系は手続きが面倒なイメージがあったので。サイトも見やすく情報が詳しく書いてあるので安心感もありました。
+                                    投資経験はまったくないですが、ずっと投資に興味を持っていました。会員登録がスマホで簡単にでき、出資も簡単にできるたのがとても便利だと思いました。 投資系は手続きが面倒なイメージがあったので。サイトも見やすく情報が詳しく書いてあるので安心感もありました。
                                 </div>
                                 <div class="author">
                                     37歳　男性
@@ -829,9 +1365,7 @@
                             </div>
                             <div class="voice_item">
                                 <div class="intro">
-                                    COZUCHIの魅力は想定利回りが良いことだと思います。投資なのでリスクはあリますが、物件の詳細情報や、ファンドをおすすめする理由が解りやすく書かれているので、
-                                    行ったことがない地域の物件でも投資するかどうか判断できるのが安心できるポイントだと思います。
-                                    1万円など少額から始められるため投資のハードルも低いです。投資するファンドを分けることによってリスク分散もできそうです。
+                                    COZUCHIの魅力は想定利回りが良いことだと思います。投資なのでリスクはあリますが、物件の詳細情報や、ファンドをおすすめする理由が解りやすく書かれているので、 行ったことがない地域の物件でも投資するかどうか判断できるのが安心できるポイントだと思います。 1万円など少額から始められるため投資のハードルも低いです。投資するファンドを分けることによってリスク分散もできそうです。
                                 </div>
                                 <div class="author">
                                     34歳　男性
@@ -862,9 +1396,7 @@
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。
-                                        従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。
-                                        COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
+                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。 従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。 COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
 
                                     </div>
                                 </div>
@@ -881,9 +1413,7 @@
                                 </div>
                                 <div id="collapse2" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。
-                                        従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。
-                                        COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
+                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。 従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。 COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
 
                                     </div>
                                 </div>
@@ -892,7 +1422,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                            <span class="icon_collapse">Q</span> 
+                                            <span class="icon_collapse">Q</span>
                                             <span class="title">不動産特定共同事業法とは？</span>
                                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                         </a>
@@ -900,9 +1430,7 @@
                                 </div>
                                 <div id="collapse3" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。
-                                        従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。
-                                        COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
+                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。 従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。 COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
 
                                     </div>
                                 </div>
@@ -919,9 +1447,7 @@
                                 </div>
                                 <div id="collapse4" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。
-                                        従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。
-                                        COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
+                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。 従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。 COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
 
                                     </div>
                                 </div>
@@ -930,7 +1456,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                                            <span class="icon_collapse">Q</span> 
+                                            <span class="icon_collapse">Q</span>
                                             <span class="title">
                                                 投資を始めるにはどのような手続きが必要ですか？
                                             </span>
@@ -940,9 +1466,7 @@
                                 </div>
                                 <div id="collapse5" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。
-                                        従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。
-                                        COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
+                                        COZUCHIとは、不動産特定共同事業法に基づいた不動産クラウドファンディングサービスです。 従来の不動産投資は多額な自己資金が必要とされていましたが、複数の投資家の皆様から資金を集めて運用するCOZUCHIでは、一口1万円から、プロが厳選した不動産に投資を行うことができます。 COZUCHIがご提案する物件は、いずれもプロが何度も議論を重ねて選び抜いたものだけ。建築士やディベロッパーなど、さまざまなバックグラウンドを持つ不動産のプロが、月に数千件もの物件を吟味し厳選。最終的にCOZUCHIにて運用するファンド案件は、そのうちの一握りです。
 
                                     </div>
                                 </div>
@@ -970,21 +1494,21 @@
                                         東京都港区南青山2-24-15 青山タワービル 9F
                                     </p>
                                     <p>
-                                        <span>E-Mail</span>	：info@assecli.com
+                                        <span>E-Mail</span> ：info@assecli.com
                                     </p>
                                     <p>
-                                        <span>TEL</span>	：03-6455-5386（平日10:00-17:00）
+                                        <span>TEL</span> ：03-6455-5386（平日10:00-17:00）
                                     </p>
                                     <p>
-                                        <span>営業時間</span>	：平日10:00 ~ 17:00
+                                        <span>営業時間</span> ：平日10:00 ~ 17:00
                                     </p>
                                     <p>
-                                        代表取締役	 小林 秀豪  ／ 業務管理者 水嶋 隼人
+                                        代表取締役 小林 秀豪 ／ 業務管理者 水嶋 隼人
                                     </p>
                                 </div>
-                                
+
                                 <div class="other_infor">
-                                   <p> 不動産特定共同事業 第1号及び第2号事業者（電子取引業務を行う）</p>
+                                    <p> 不動産特定共同事業 第1号及び第2号事業者（電子取引業務を行う）</p>
                                     <p>許可番号：東京都知事 第60号</p>
                                     <p>宅地建物取引業者　東京都知事（5）77822号</p>
                                     <p> 第二種金融商品取引業者　関東財務局長（金商）第740号 </p>
@@ -998,7 +1522,8 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn animated" style="visibility: visible; -webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;" data-wow-delay="0.6s">
                     <div class="map_box">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7986707022665!2d105.81378231440696!3d21.000705994112543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9b3f23b42b%3A0x49fa01aaa06d239b!2sVinhomes%20Royal%20City!5e0!3m2!1svi!2s!4v1624053413260!5m2!1svi!2s" width="680" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7986707022665!2d105.81378231440696!3d21.000705994112543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9b3f23b42b%3A0x49fa01aaa06d239b!2sVinhomes%20Royal%20City!5e0!3m2!1svi!2s!4v1624053413260!5m2!1svi!2s"
+                            width="680" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -1039,19 +1564,19 @@
     <script>
         var windowsize = $(window).width();
         if (windowsize >= 992) {
-           $height = 245;
-           $width = 245;
-        }else if(windowsize < 992 && windowsize >= 768){
-            $height =  220;
+            $height = 245;
+            $width = 245;
+        } else if (windowsize < 992 && windowsize >= 768) {
+            $height = 220;
             $width = 220;
-        }else if(windowsize < 768 && windowsize > 480){
-            $height =  240;
+        } else if (windowsize < 768 && windowsize > 480) {
+            $height = 240;
             $width = 240;
-        }else if(windowsize <= 480 && windowsize > 375){
-            $height =  220;
+        } else if (windowsize <= 480 && windowsize > 375) {
+            $height = 220;
             $width = 220;
-        }else if(windowsize <= 375){
-            $height =  200;
+        } else if (windowsize <= 375) {
+            $height = 200;
             $width = 200;
         }
         var options = {
@@ -1085,7 +1610,7 @@
                     dataLabels: {
                         name: {
                             color: "#e37467",
-                            formatter: function () {
+                            formatter: function() {
                                 return ["達成率"];
                             }
                         },
@@ -1093,7 +1618,7 @@
                             color: "#e37467",
                             fontSize: '22px'
                         },
-                        
+
                     }
                 }
             },
@@ -1129,7 +1654,7 @@
                     dataLabels: {
                         name: {
                             color: "#f1c846",
-                            formatter: function () {
+                            formatter: function() {
                                 return ["達成率"];
                             }
                         },
@@ -1137,7 +1662,7 @@
                             color: "#f1c846",
                             fontSize: '22px'
                         },
-                        
+
                     }
                 }
             },
@@ -1155,4 +1680,5 @@
         chart3.render();
     </script>
 </body>
+
 </html>
