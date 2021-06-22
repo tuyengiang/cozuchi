@@ -1737,7 +1737,15 @@ h4.panel-title {
         height: auto;
     }
     .service_item .title {
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 25px;
+        height: 50px;
+    }
+    .img_service{
+        height: 70px;
+    }
+    .border_img {
+        margin-bottom: 20px;
     }
     .safety_item .title {
         margin-bottom: 25px;
@@ -1784,6 +1792,24 @@ h4.panel-title {
 }
 
 @media (max-width:991px) {
+    .service_item .title{
+        margin-bottom: 10px;
+    }
+    .message_about_box {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .feel_box {
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+    .message_about_content {
+        margin-top: 35px;
+        padding-bottom: 30px;
+    }
+    .feel_box .img {
+        margin-top: 35px;
+    }
     .btn_main {
         line-height: 40px;
         height: 40px;
@@ -1979,19 +2005,22 @@ h4.panel-title {
         padding-bottom: 35px;
     }
     .mobile_box {
-        width: 130px;
+        width: 100px;
     }
     .desk_box {
-        width: calc(100% - 130px);
-        padding-right: 20px;
+        width: calc(100% - 100px);
+        padding-right: 30px;
     }
     .fieldset_title {
         text-align: left;
     }
     .fieldset_flow_item .photo {
-        margin-top: 10px;
+        margin-top: 0;
         margin-bottom: 0;
         height: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
     .fieldset_flow_item {
         display: flex;
@@ -2330,8 +2359,8 @@ h4.panel-title {
     }
     .service_item .title {
         font-size: 14px;
-        line-height: 30px;
-        height: 60px;
+        line-height: 20px;
+        height: 40px;
         margin-bottom: 10px;
     }
     .border_img {
@@ -2348,7 +2377,7 @@ h4.panel-title {
         margin-top: 50px;
     }
     .img_service {
-        height: 140px;
+        height: 100px;
         display: flex;
         align-items: center;
         padding: 20px 0;
@@ -2482,10 +2511,10 @@ h4.panel-title {
    
    
     .mobile_box {
-        width: 100px;
+        width: 75px;
     }
     .desk_box {
-        width: calc(100% - 100px);
+        width: calc(100% - 75px);
     }
     .voice_box {
         margin-top: 60px;
@@ -2764,7 +2793,7 @@ h4.panel-title {
     }
     .safety_box {
         padding-bottom: 35px;
-        padding-top: 50px;
+        
     }
     .safety_content {
         margin-top: 50px;
