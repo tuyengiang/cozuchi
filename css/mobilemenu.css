@@ -372,7 +372,7 @@ body.mmactive {
 }
 @media (max-width: 480px) {
     #sm_menu_ham{
-        right: 30px;
+        right: 15px;
     }
     .sm_menu_outer .mobile_menu a{
         font-size: 14px !important;
@@ -380,6 +380,6 @@ body.mmactive {
 }
 @media (max-width: 375px) {
     #sm_menu_ham{
-        right: 25px;
+        right: 15px;
     }
 }

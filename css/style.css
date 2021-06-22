@@ -424,16 +424,15 @@ a:hover {
     border: 2px solid var(--main-color-2);
     border-radius: 30px;
     color: var(--main-color) !important;
-    ;
     background-color: var(--main-bg-color-2) !important;
-    ;
     line-height: 60px;
     height: 60px;
     width: 200px;
     padding-top: 0;
     padding-left: 0;
     text-align: center;
-    transition: all 0.3s ease-out
+    transition: all 0.3s ease-out;
+    padding: 0;
 }
 
 .btn_main:hover,
@@ -1198,7 +1197,7 @@ h4.panel-title {
         max-width: 565px;
     }
 }
-@media (max-width:1366px) {
+@media (max-width:1440px) {
     
     .login_page h1, .register_page h1 {
         margin-top: 25px;
@@ -1673,14 +1672,40 @@ h4.panel-title {
 }
 
 @media (max-width:991px) {
+    .btn_main {
+        line-height: 40px;
+        height: 40px;
+        width: 133px;
+        font-size: 12px;
+      
+    }
+    .view_more_box {
+        right: 30px;
+        top: -5px;
+        
+    }
+    .about_box {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .about_box_content .img img {
+        max-width: 200px;
+      
+    }
+    .project_box {
+        margin-top: 35px;
+    }
     .page_project_box {
-        padding-top: 50px;
+        padding-top: 35px;
     }
     .page_project_box .project_list {
-        margin-top: 45px;
+        margin-top: 35px;
     }
     .page_project_box .item_project {
-        margin-bottom: 70px;
+        margin-bottom: 35px;
+    }
+    .feel_box .img img{
+        max-width: 180px;
     }
     .form-group.check_box {
         margin-top: 20px !important;
@@ -1712,7 +1737,11 @@ h4.panel-title {
         width: 20px;
     }
     .section_title {
-        font-size: 28px;
+        font-size: 20px;
+    }
+    .list_project_box {
+        margin-top: 35px;
+        padding-bottom: 55px;
     }
     .service_item {
         margin-bottom: 40px;
@@ -1720,13 +1749,41 @@ h4.panel-title {
     .safety_item {
         display: flex;
         flex-flow: row-reverse;
-        margin-bottom: 70px;
+        margin-bottom: 35px;
+    }
+    .flow_content .registration {
+        margin-top: 0;
     }
     .safety_item .photo {
         width: 170px;
         margin-left: 30px;
         margin-bottom: 0;
         padding-top: 5px;
+    }
+    .flow_content .registration a {
+        height: 45px;
+        line-height: 45px;
+        max-width: 270px;
+        font-size: 14px;
+    }
+    .voice_box {
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+    .voice_content {
+        margin-top: 30px;
+    }
+    .faq_box {
+        padding-bottom: 35px;
+        padding-top: 35px;
+    }
+    .faq_content {
+        margin-top: 35px;
+    }
+    .company_box {
+        
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
     .safety_item .photo img {
         height: auto;
@@ -1738,40 +1795,38 @@ h4.panel-title {
         height: auto;
         margin-bottom: 25px;
         text-align: left;
-        font-size: 24px;
+        font-size: 18px;
     }
     .section_header {
         padding-left: 40px;
         padding-right: 30px;
     }
     .about_box_content {
-        margin-top: 70px;
+        margin-top: 35px;
     }
     .about_intro {
         padding-left: 15px;
         padding-right: 15px;
-        margin-top: 50px;
+        margin-top: 35px;
+        font-size: 14px;
     }
     .about_box_content .img img {
-        max-width: 350px;
-        height: auto;
+        max-width: 200px;
     }
-    .about_box {
-        margin-top: 75px;
-        margin-bottom: 75px;
-    }
+    
     .about_intro .semni_bold {
         font-weight: 500;
     }
     .service_feature_content {
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .service_feature_box {
-        padding-bottom: 75px;
+        padding-bottom: 35px;
+        padding-top: 35px;
     }
     .strength_box {
-        margin-top: 80px;
-        margin-bottom: 80px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .strength_item .number {
         width: 40px;
@@ -1780,31 +1835,33 @@ h4.panel-title {
     }
     .strength_item .title {
         width: calc(100% - 40px);
+        font-size: 20px;
     }
     .strength_content {
-        margin-top: 70px;
+        margin-top: 35px;
     }
     .strength_photo {
-        margin-top: 50px;
+        margin-top: 30px;
         text-align: center;
     }
     .strength_photo img {
         height: auto;
     }
     .strength_item:not(:last-child) {
-        margin-bottom: 60px;
-        padding-bottom: 60px;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
         border-bottom: 2px solid #eee;
     }
     .safety_item .title span {
         justify-content: left;
     }
     .safety_box {
-        padding-bottom: 70px;
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
     .flow_box {
-        padding-top: 70px;
-        padding-bottom: 100px;
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
     .mobile_box {
         width: 130px;
@@ -1828,7 +1885,7 @@ h4.panel-title {
         padding: 35px;
     }
     .map_box {
-        margin-top: 100px;
+        margin-top: 70px;
     }
     /* .project_page .chart_box {
         width: calc(100% - 280px);
@@ -1885,6 +1942,12 @@ h4.panel-title {
 }
 
 @media (max-width:767px) {
+    .feel_box .img img{
+        max-width: 150px;
+    }
+    .about_box_content .img img {
+        max-width: 150px;
+    }
     .login_page h1, .register_page h1 {
         margin-bottom: 20px;
         font-size: 24px !important;
@@ -2013,9 +2076,7 @@ h4.panel-title {
     .remember_box {
         margin-right: 25px;
     }
-    .section_title .size60 {
-        font-size: 48px !important;
-    }
+   
     .safety_item .body {
         width: calc(100% - 190px);
     }
@@ -2091,9 +2152,24 @@ h4.panel-title {
     /* .project_page .apexcharts-canvas {
         top: -10px;
     } */
+    .strength_box {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .strength_item .number {
+       
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .section_title {
+        font-size: 18px;
+    }
 }
 
 @media (max-width:480px) {
+    .about_box_content .img img {
+        max-width: 140px;
+    }
     .note_chart {
         width: 150px;
         padding-left: 10px;
@@ -2164,7 +2240,7 @@ h4.panel-title {
         padding-bottom: 40px;
     }
     .strength_item .title {
-        font-size: 20px;
+        font-size: 18px;
     }
     .strength_item .intro {
         margin-top: 20px;
@@ -2184,10 +2260,10 @@ h4.panel-title {
         padding-right: 20px;
     }
     .view_more_box {
-        height: 40px;
-        width: 130px;
-        font-size: 12px;
-        line-height: 40px;
+        height: 35px;
+        width: 120px;
+        font-size: 10px;
+        line-height: 35px;
         right: 15px;
         top: -6px;
         padding-right: 0;
@@ -2277,19 +2353,8 @@ h4.panel-title {
     .flow_content {
         margin-top: 40px;
     }
-    .flow_content .registration {
-        margin-top: 20px;
-    }
-    .flow_content .registration a {
-        height: 60px;
-        line-height: 60px;
-        max-width: 320px;
-        font-size: 18px;
-    }
-    .flow_box {
-        padding-top: 50px;
-        padding-bottom: 60px;
-    }
+   
+   
     .mobile_box {
         width: 100px;
     }
@@ -2399,7 +2464,7 @@ h4.panel-title {
         font-size: 14px !important;
     }
     .feel_box .img img {
-        max-width: 170px;
+        max-width: 150px;
     }
     .about_operating {
         padding-bottom: 30px;
@@ -2697,9 +2762,7 @@ h4.panel-title {
     .company_box {
         padding-top: 45px;
     }
-    .project_box {
-        margin-top: 50px;
-    }
+    
     .list_project_box {
         margin-top: 45px;
         padding-bottom: 60px;
