@@ -142,6 +142,9 @@
 
 /* iPad landscape style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .note_chart {
+        width: 180px !important;
+    }
     #sm_menu_ham {
         top: 15px !important;
     }
@@ -177,7 +180,9 @@
     #sm_menu_ham {
         top: 15px !important;
     }
-
+    .note_chart {
+        width: 180px !important;
+    }
     .chart-list {
         margin-top: 30px;
     }
