@@ -155,7 +155,7 @@ body.mmactive {
     transition: all .5s ease-in-out 0;
     width: 25px;
     top: 22px;
-    right: 45px;
+    right: 10px;
     z-index: 99999
 }
 
@@ -344,9 +344,7 @@ body.mmactive {
     .mb992_15 {
         margin-bottom: 15px!important
     }
-    #sm_menu_ham{
-        right: 40px;
-    }
+    
 }
 
 @media (max-width: 767px) {
@@ -374,15 +372,11 @@ body.mmactive {
     }
 }
 @media (max-width: 480px) {
-    #sm_menu_ham{
-        right: 15px;
-    }
+   
     .sm_menu_outer .mobile_menu a{
         font-size: 14px !important;
     }
 }
 @media (max-width: 375px) {
-    #sm_menu_ham{
-        right: 15px;
-    }
+    
 }

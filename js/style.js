@@ -1,7 +1,5 @@
 $(function () {
-    $( window ).resize(function() {
-            window.location.reload(true);
-        });
+    
     if ($('.owl-carousel-project').length > 0) {
         var $owl = $('.owl-carousel-project');
         $owl.owlCarousel({

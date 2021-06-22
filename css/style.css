@@ -1638,6 +1638,12 @@ h4.panel-title {
         margin-top: 35px;
         
     }
+    .select_box select {
+        height: 45px;
+    }
+    .project_page {
+        padding-bottom: 60px;
+    }
     .message_about_intro .size28 {
         font-size: 20px !important;
     }
@@ -1808,7 +1814,10 @@ h4.panel-title {
         margin-top: 35px;
     }
     .page_project_box .item_project {
-        margin-bottom: 35px;
+        margin-bottom: 50px;
+    }
+    .project_page {
+        padding-bottom: 50px;
     }
     .feel_box .img img{
         max-width: 180px;
@@ -2057,6 +2066,13 @@ h4.panel-title {
 }
 
 @media (max-width:767px) {
+    .select_box select {
+        height: 40px;
+        font-size: 14px;
+    }
+    .about_page h2 {
+        font-size: 22px !important;
+    }
     .feel_box .img img{
         max-width: 150px;
     }
@@ -2238,12 +2254,7 @@ h4.panel-title {
     .map_box iframe {
         max-height: 600px;
     }
-    .page_project_box {
-        padding-top: 80px;
-    }
-    .safety_content {
-        margin-top: 80px;
-    }
+   
 }
 
 @media (max-width:576px) {
@@ -2419,10 +2430,10 @@ h4.panel-title {
         font-size: 14px;
     }
     .project_search .results {
-        font-size: 14px;
+        font-size: 12px;
     }
     .select_box select {
-        height: 50px;
+        height: 40px;
     }
     .type_item {
         font-size: 10px;
@@ -2570,10 +2581,10 @@ h4.panel-title {
         padding-bottom: 60px;
     }
     .about_page .size32 {
-        font-size: 26px !important;
+        font-size: 20px !important;
     }
     .about_page .size28 {
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
     .about_page .size18 {
         font-size: 14px !important;
@@ -2621,15 +2632,7 @@ h4.panel-title {
     .submit_register  .btn_submit {
         max-width: 250px;
     }
-    .page_project_box {
-        padding-top: 50px;
-    }
-    .page_project_box .project_list {
-        margin-top: 50px;
-    }
-    .page_project_box .item_project {
-        margin-bottom: 80px;
-    }
+   
     .list_pagination {
         margin-top: 25px;
     }
@@ -2681,6 +2684,9 @@ h4.panel-title {
     }
 }
 @media (max-width:375px) {
+    .about_page .size32 {
+        font-size: 18px !important;
+    }
     .policy.mb-5 {
         margin-bottom: 15px !important;
         font-size: 12px;
@@ -2718,9 +2724,7 @@ h4.panel-title {
     .project_page .apexcharts-canvas {
         top: -12px;
     }
-    .page_project_box .item_project {
-        margin-bottom: 70px;
-    }
+    
     .list_project_box .apexcharts-canvas {
         left: -73px;
         top: -10px;
