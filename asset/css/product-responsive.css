@@ -4,8 +4,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-    #app-service h3.white, #app-service .home-title {
+    #app-service h3.white, #app-service .home-title, #app-service-2 .home-title > h3 {
         margin-bottom: 0px !important;
+    }
+
+    #app-service-2 .home-title {
+        margin-bottom: 0px !important;
+    }
+
+    #app-service-2 .service-post-list {
+        margin-top: 30px !important;
     }
 
     .display-1 > div {
@@ -212,9 +220,18 @@
 
 /* iPad landscape style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    #app-service-2 .home-title, #app-service-2 .home-title h3 {
+        margin-bottom: 0px !important;
+    }
+
+    #app-service-2 .service-post-list {
+        margin-top: 40px !important;
+    }
+
     #app-service h3.white, #app-service .home-title {
         margin-bottom: 0px !important;
     }
+
     section#detail-header {
         margin-top: 64px;
     }
@@ -232,6 +249,14 @@
 
 /* iPad portrait style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    #app-service-2 .home-title, #app-service-2 .home-title h3 {
+        margin-bottom: 0px !important;
+    }
+
+    #app-service-2 .service-post-list {
+        margin-top: 40px !important;
+    }
+
     #app-service h3.white, #app-service .home-title {
         margin-bottom: 0px !important;
     }
