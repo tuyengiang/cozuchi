@@ -134,6 +134,10 @@
     .pc-04-item .pc-04-link a {
         padding: 8px 25px;
     }
+    .header__mobile {
+        height: 42px !important;
+        padding-top: 10px;
+    }
 }
 
 /* iPad landscape style here */
@@ -162,6 +166,10 @@
         overflow-x: auto;
         white-space: nowrap;
     }
+    .header__mobile {
+        height: 42px !important;
+        padding-top: 10px;
+    }
 }
 
 /* iPad portrait style here */
@@ -188,6 +196,7 @@
     }
     .header__mobile {
         height: 42px !important;
+        padding-top: 10px;
     }
 }
 
@@ -197,5 +206,6 @@
     }
     .header__mobile {
         height: 42px !important;
+        padding-top: 10px;
     }
 }
