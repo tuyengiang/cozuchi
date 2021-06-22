@@ -241,9 +241,9 @@
         width: calc(100% - 30px);
         border-radius: 50px;
         color: #fff !important;
-        max-width: 280px;
-        height: 60px;
-        line-height: 60px;
+        max-width: 200px;
+        height: 50px;
+        line-height: 50px;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
@@ -255,10 +255,11 @@
     }
 }
 
-@media (max-width:480px) {
+@media (max-width:991px) {
     .log_box_mobile a {
-        height: 48px;
-        line-height: 48px;
+        height: 40px;
+        line-height: 40px;
+        max-width: 160px;
     }
 }
 
