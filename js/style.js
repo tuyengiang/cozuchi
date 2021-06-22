@@ -1,4 +1,7 @@
 $(function () {
+    $( window ).resize(function() {
+            window.location.reload(true);
+        });
     if ($('.owl-carousel-project').length > 0) {
         var $owl = $('.owl-carousel-project');
         $owl.owlCarousel({
@@ -12,10 +15,21 @@ $(function () {
             responsive: {
                 0: {
                     items: 1,
-                    margin: 15,
-                    stagePadding: 50
+                    margin: 20,
+                    stagePadding: 40
                 },
-                480: {
+               
+                376: {
+                    items: 1,
+                    margin: 20,
+                    stagePadding: 40
+                },
+                404: {
+                    items: 1,
+                    margin: 25,
+                    stagePadding: 55
+                },
+                435: {
                     items: 1,
                     margin: 30,
                     stagePadding: 75
@@ -39,6 +53,8 @@ $(function () {
             dots: false,
             margin: 50,
             autoplay: false,
+            animateOut: 'fadeOut',
+             animateIn: 'fadeIn',
             responsiveClass: true,
             responsive: {
                 0: {
