@@ -89,7 +89,7 @@ body.mmactive {
     position: absolute;
     left: 15px;
     top: 14px;
-    font-size: 26px;
+    font-size: 22px;
     -webkit-text-stroke: 1px #fff;
 }
 
@@ -136,7 +136,7 @@ body.mmactive {
     top: 3px;
     -webkit-text-stroke: 1px #fff;
     ;
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'Font Awesome\ 5 Free';
 }
 
@@ -155,7 +155,7 @@ body.mmactive {
     transition: all .5s ease-in-out 0;
     width: 25px;
     top: 22px;
-    right: 12px;
+    right: 35px;
     z-index: 99999
 }
 
@@ -358,12 +358,28 @@ body.mmactive {
 }
 
 @media (max-width: 1024px) {
+    .header__mobile {height: 100%;}
     header .logo-port {
         padding-left: 0;
         width: 155px;
-        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        height: 100%;
     }
     header {
         background-color: #fff
+    }
+}
+@media (max-width: 480px) {
+    #sm_menu_ham{
+        right: 30px;
+    }
+    .sm_menu_outer .mobile_menu a{
+        font-size: 14px !important;
+    }
+}
+@media (max-width: 375px) {
+    #sm_menu_ham{
+        right: 25px;
     }
 }

@@ -169,6 +169,16 @@
     margin-left: 20px;
 }
 
+@media (max-width:1366px) {
+    .log_box a {
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+    .header__desktop--box {
+        padding: 25px 20px;
+    }
+}
 @media (max-width:1315px) {
     .log_box a {
         width: 110px;

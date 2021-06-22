@@ -29,7 +29,9 @@
     --main-bg-color-2: #fff5f4;
     --color-body: #000;
 }
-
+.h3, .h4, .h5, .h6,h3, h4, h5, h6{
+    line-height: 1.5;
+}
 body {
     font-size: 16px;
     color: #000;
@@ -386,7 +388,9 @@ a:hover {
     max-width: 600px;
     width: 100%;
 }
-
+.title_banner img {
+    height: auto;
+}
 .intro_banner p {
     background-color: #fff;
     padding: 5px 10px 5px 5px;
@@ -1192,8 +1196,97 @@ h4.panel-title {
         max-width: 565px;
     }
 }
-
+@media (max-width:1366px) {
+    
+    .login_page h1, .register_page h1 {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-size: 32px !important;
+    }
+    .submit_form .form-group {
+        margin-bottom: 20px;
+    }
+    .submit_form input {
+        height: 50px;
+    }
+    .form-group.check_box {
+        margin-top: 30px !important;
+        margin-bottom: 0 !important;
+    }
+    .remember_box input{
+        height: 25px;
+    }
+    .btn_submit,.btn_other {
+        width: 300px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 18px;
+    }
+    .submit.mt-5 {
+        margin-top: 30px !important;
+    }
+    .submit_form {
+        padding-bottom: 40px;
+    }
+    .policy.mb-5 {
+        margin-bottom: 30px !important;
+    }
+    .submit_register{
+        margin-bottom: 20px  !important;
+    }
+    .note_login {
+        margin-bottom: 15px !important;
+    }
+    .mb_15_lap{
+        margin-bottom: 15px !important;
+    }
+    .project_box {
+        margin-top: 85px;
+    }
+    .btn_main{
+        line-height: 50px;
+        height: 50px;
+        width: 180px;
+        font-size: 14px;
+    }
+    .section_title {
+        font-size: 30px;
+    }
+    .list_project_box {
+        margin-top: 70px;
+        padding-bottom: 90px;
+    }
+    .item_infor .size32 {
+        font-size: 28px !important;
+    }
+    .intro_banner {
+        max-width: 800px;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .certify {
+        margin-bottom: 40px;
+    }
+    .title_banner {
+        max-width: 500px;
+    }
+    .about_box {
+        margin-top: 80px;
+        margin-bottom: 160px;
+    }
+    .about_box_content {
+        margin-top: 70px;
+    }
+    .about_intro {
+        margin-top: 60px;
+    }
+}
 @media (max-width:1200px) {
+    .login_page h1, .register_page h1 {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 30px !important;
+    }
     .slider_content {
         padding-left: 40px;
         padding-right: 30px;
@@ -1225,6 +1318,31 @@ h4.panel-title {
 }
 
 @media (max-width:1024px) {
+    
+    .login_page,.register_page{
+        padding-top: 30px;
+    }
+    .submit_form {
+        max-width: 650px;
+    }
+    .btn_submit, .btn_other {
+        width: 250px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 18px;
+    }
+    .login_page .btn_submit {
+        margin-right: 30px;
+    }
+    .submit.mt-5 {
+        margin-top: 25px !important;
+        margin-bottom: 40px !important;
+    }
+    .login_page h1, .register_page h1{
+        margin-top: 0;
+       
+        font-size: 28px !important;
+    }
     .right_slider {
         max-width: 35%;
     }
@@ -1282,6 +1400,35 @@ h4.panel-title {
 }
 
 @media (max-width:991px) {
+    .form-group.check_box {
+        margin-top: 20px !important;
+    }
+    .submit_form .form-group{
+        margin-bottom: 15px !important;
+    }
+    .submit_form label,.submit_form a {
+        font-size: 14px;
+    }
+    .login_page .btn_submit {
+        margin-right: 20px;
+    }
+    .submit_form input,.submit_form select{
+        font-size: 14px;
+    }
+    .btn_submit, .btn_other {
+        width: 230px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .remember_box {
+        margin-right: 45px;
+        padding-top: 2px;
+    }
+    .remember_box input {
+        height: 20px;
+        width: 20px;
+    }
     .section_title {
         font-size: 28px;
     }
@@ -1422,13 +1569,8 @@ h4.panel-title {
     .intro_banner {
         text-align: center;
     }
-    .login_page .btn_submit {
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-    .submit button {
-        min-width: 55%;
-    }
+    
+    
     .owl-carousel.owl-carousel-project .owl-stage-outer {
         padding-bottom: 45px;
         margin-bottom: -45px;
@@ -1461,6 +1603,19 @@ h4.panel-title {
 }
 
 @media (max-width:767px) {
+    .login_page h1, .register_page h1 {
+        margin-bottom: 20px;
+        font-size: 24px !important;
+    }
+    .login_page, .register_page {
+        padding-top: 20px;
+    }
+    .submit_form input {
+        height: 45px;
+    }
+    .remember_box input{
+        height: 20px;
+    }
     .left_slider {
         padding-right: 0;
     }
@@ -1563,11 +1718,15 @@ h4.panel-title {
     }
     .btn_other,
     .btn_submit {
-        height: 60px;
-        line-height: 60px;
         width: 100%;
-        max-width: 320px;
-        font-size: 20px;
+        max-width: 200px;
+        font-size: 14px;
+    }
+    .submit_form label, .submit_form a {
+        font-size: 12px;
+    }
+    .submit_form {
+        padding-bottom: 15px;
     }
     .remember_box {
         margin-right: 25px;
@@ -1988,13 +2147,17 @@ h4.panel-title {
     }
     .submit_form {
         font-size: 14px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
-    .btn_other,
-    .btn_submit {
-        font-size: 16px;
-        height: 50px;
-        line-height: 50px;
+    .btn_other, .btn_submit {
+        width: 100%;
+        max-width: 170px;
+        font-size: 14px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .submit_register  .btn_submit {
+        max-width: 250px;
     }
     .page_project_box {
         padding-top: 50px;
@@ -2033,8 +2196,41 @@ h4.panel-title {
         width: 130px;
     }
 }
-
+@media (max-width:395px) {
+    .btn_other, .btn_submit {
+        max-width: 300px;
+    }
+    .login_page .btn_submit {
+        margin-right:0;
+        margin-bottom: 15px;
+    }
+    .login_page h1, .register_page h1 {
+        margin-bottom: 15px;
+        font-size: 20px !important;
+    }
+    .remember_box {
+        padding-top: 0px;
+    }
+    .submit_form {
+        padding-bottom: 0px;
+    }
+    .submit.mt-5 {
+        margin-bottom: 25px !important;
+    }
+}
 @media (max-width:375px) {
+    .policy.mb-5 {
+        margin-bottom: 15px !important;
+    }
+    .other_box_regist span {
+        margin-bottom: 20px;
+    }
+    .submit_form label {
+        margin-bottom: 8px;
+    }
+    .submit_register .btn_submit {
+        max-width: 300PX;
+    }
     .project_page .chart_box {
         width: calc(100% - 180px);
     }

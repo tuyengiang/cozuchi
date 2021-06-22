@@ -62,13 +62,13 @@
 }
 @media (max-width:375px){
     .footer_page {
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
     .logo_footer {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     .logo_footer img {
-        width: 120px;
+        width: 150px;
         height: auto
     }
 }
