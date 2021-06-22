@@ -1184,10 +1184,12 @@ h4.panel-title {
 }
 
 .project_page .apexcharts-canvas {
-    left: -52px;
-    top: -30px;
+    left: -45px;
+    top: -28px;
 }
-
+.feel_box .img img {
+    height: auto;
+}
 @media (min-width:1440px) {
     .header__desktop--box {
         padding: 35px 40px;
@@ -1250,7 +1252,7 @@ h4.panel-title {
         font-size: 14px;
     }
     .section_title {
-        font-size: 30px;
+        font-size: 28px;
     }
     .list_project_box {
         margin-top: 70px;
@@ -1261,27 +1263,256 @@ h4.panel-title {
     }
     .intro_banner {
         max-width: 800px;
-        font-size: 30px;
-        margin-bottom: 50px;
+        font-size: 26px;
+        margin-bottom: 35px;
+    }
+    .login-slide {
+        font-size: 18px;
+        width: 312px;
+        height: 80px;
     }
     .certify {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+        width: 312px;
     }
     .title_banner {
-        max-width: 500px;
+        max-width: 480px;
     }
     .about_box {
-        margin-top: 80px;
-        margin-bottom: 160px;
+        margin-top: 75px;
+        margin-bottom: 150px;
     }
     .about_box_content {
-        margin-top: 70px;
+        margin-top: 65px;
     }
     .about_intro {
         margin-top: 60px;
     }
+    .note_chart p .size36{
+        font-size: 28px !important;
+    }
+    .note_chart p .size18{
+        font-size: 16px !important;
+    }
+    .note_chart p span:first-child{
+        font-size: 15px;
+    }
+    .list_project_box .apexcharts-canvas {
+        left: -82px;
+        top: -28px;
+    }
+    .service_feature_box {
+        padding-top: 70px;
+        padding-bottom: 120px;
+    }
+    .service_feature_content {
+        margin-top: 80px;
+    }
+    .strength_box {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    .strength_item .number {
+        width: 60px;
+        font-size: 70px;
+        line-height: 60px;
+    }
+    .strength_item .title {
+        font-size: 24px;
+        width: calc(100% - 60px);
+    }
+    .strength_content {
+        margin-top: 80px;
+    }
+    .strength_item:not(:last-child) {
+        margin-bottom: 80px;
+    }
+    .safety_box {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .safety_item .title {
+        font-size: 24px;
+        height: 64px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .safety_item .photo {
+        margin-bottom: 40px;
+    }
+    .safety_content {
+        margin-top: 70px;
+    }
+    .safety_intro {
+        font-size: 15px;
+    }
+    .flow_box {
+        padding-bottom: 85px;
+        padding-top: 75px;
+    }
+    .flow_content {
+        margin-top: 45px;
+    }
+    .fieldset_flow_item {
+        padding: 25px;
+    }
+    .fieldset_flow_item .photo {
+        margin-top: 45px;
+        margin-bottom: 35px;
+    }
+    .flow_content .registration {
+        margin-top: 55px;
+    }
+    .flow_content .registration a {
+        font-size: 18px;
+        height: 75px;
+        line-height: 75px;
+        max-width: 352px;
+    }
+    .voice_box {
+        margin-top: 70px;
+        margin-bottom: 90px;
+    }
+    .voice_content {
+        margin-top: 60px;
+    }
+    .owl-carousel-cozuchi .owl-prev{
+        left: -60px;
+    }
+    .owl-carousel-cozuchi .owl-next{
+        right: -60px;
+    }
+    .faq_box {
+        padding-bottom: 75px;
+        padding-top: 75px;
+    }
+    .faq_content {
+        margin-top: 70px;
+    }
+    .panel-title a {
+        font-size: 18px;
+        padding: 18px 80px 18px 20px;
+    }
+    .panel-title a .icon_collapse {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 24px;
+    }
+    .faq_panel .panel-body {
+        padding: 30px 55px 40px 45px;
+        font-size: 15px;
+    }
+    .company_box {
+        padding-left: 65px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .company_infor {
+        padding-left: 40px;
+        margin-top: 50px;
+    }
+    .company_name {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .information_contact {
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+    .sm-slider,
+    .sm-slider:after {
+        height: calc(100vh - 110px) !important;
+    }
+    .slider_content {
+        bottom: 70px;
+        padding-left: 80px;
+        padding-right: 40px;
+    }
+    .service_feature_content .list_item {
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+     .fieldset_flow_item legend {
+        padding: 0 15px;
+        font-size: 50px;
+        line-height: 50px;
+        
+    }
+    .fieldset_title {
+        font-size: 24px;
+    }
+    .section_title .size60 {
+        font-size: 45px !important;
+    }
+    .feel_box {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .feel_box .img {
+        margin-top: 60px;
+    }
+    .message_about_box {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .message_about_intro {
+        margin-top: 50px;
+    }
+    .message_about_intro .size28{
+        font-size: 24px !important;
+    }
+    .message_about_content {
+        margin-top: 70px;
+        padding-bottom: 60px;
+    }
+    .about_operating {
+        padding-bottom: 60px;
+        padding-top: 60px;
+        
+    }
+    .about_operating_intro {
+        margin-top: 50px;
+    }
+    .back_about {
+        margin-top: 50px;
+    }
+    .feel_about_intro .size18,
+    .message_about_box .size18{
+        font-size: 16px !important;
+    }
+    .page_project_box {
+        padding-top: 75px;
+    }
+    .page_project_box .project_list {
+        margin-top: 60px;
+    }
+    .page_project_box .item_project {
+        margin-bottom: 80px;
+    }
+}
+/* @media  (min-width:1201px) {
+    .sm-slider, .sm-slider:after {
+        height: 780px;
+    }
+} */
+@media (max-width:1200px) {
+    
 }
 @media (max-width:1200px) {
+    .section_title {
+        font-size: 26px;
+    }
+    .safety_item .title {
+        font-size: 22px;
+    }
+    .flow_content .registration a {
+        font-size: 16px;
+        height: 60px;
+        line-height: 60px;
+        max-width: 360px;
+    }
+  
     .login_page h1, .register_page h1 {
         margin-top: 20px;
         margin-bottom: 25px;
@@ -1318,7 +1549,49 @@ h4.panel-title {
 }
 
 @media (max-width:1024px) {
-    
+    .message_about_intro .size28 {
+        font-size: 20px !important;
+    }
+    .feel_box {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .feel_box .img {
+        margin-top: 45px;
+    }
+
+    .message_about_box {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .message_about_intro {
+        margin-top: 40px;
+    }
+    .message_about_intro .size28{
+        font-size: 24px !important;
+    }
+    .message_about_content {
+        margin-top: 55px;
+        padding-bottom: 45px;
+    }
+    .about_operating {
+        padding-bottom: 45px;
+        padding-top: 45px;
+        
+    }
+    .about_operating_intro {
+        margin-top: 40px;
+    }
+    .back_about {
+        margin-top: 40px;
+    }
+    .author.size24 {
+        font-size: 20px !important;
+    }
+
+    .sm-slider, .sm-slider:after {
+        height: calc(100vh - 64px) !important;
+    }
     .login_page,.register_page{
         padding-top: 30px;
     }
@@ -1400,6 +1673,15 @@ h4.panel-title {
 }
 
 @media (max-width:991px) {
+    .page_project_box {
+        padding-top: 50px;
+    }
+    .page_project_box .project_list {
+        margin-top: 45px;
+    }
+    .page_project_box .item_project {
+        margin-bottom: 70px;
+    }
     .form-group.check_box {
         margin-top: 20px !important;
     }
