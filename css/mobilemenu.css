@@ -155,7 +155,7 @@ body.mmactive {
     transition: all .5s ease-in-out 0;
     width: 25px;
     top: 22px;
-    right: 35px;
+    right: 45px;
     z-index: 99999
 }
 
@@ -343,6 +343,9 @@ body.mmactive {
     }
     .mb992_15 {
         margin-bottom: 15px!important
+    }
+    #sm_menu_ham{
+        right: 40px;
     }
 }
 

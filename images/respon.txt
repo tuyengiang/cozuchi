@@ -1,0 +1,87 @@
+@media (max-width: 1024px) {
+    *{}
+
+.strength_item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.strength_content {
+    margin-top: 30px;
+}
+
+.strength_box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.company_box {
+    padding: 30px 0;
+}
+
+.faq_content {
+    margin-top: 30px;
+}
+
+.faq_box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.voice_content {
+    margin-top: 35px;
+}
+
+.voice_box {
+    margin: 30px 0;
+}
+
+.flow_box {
+    padding-bottom: 40px;
+}
+
+.flow_content .registration {
+    margin-top: 30px;
+}
+
+.flow_content {
+    margin-top: 30px;
+}
+
+.flow_box {
+    padding-top: 30px;
+}
+
+.safety_content {
+    margin-top: 40px;
+}
+
+.safety_box {
+    padding-top: 40px;
+}
+
+.service_feature_content {
+    margin-top: 40px;
+}
+
+.service_feature_box {padding-top: 50px;padding-bottom: 50px;}
+
+.about_box_content {
+    margin-top: 40px;
+}
+
+.about_box {
+    margin: 40px 0;
+}
+
+.about_box_content img {
+    width: 200px;
+}
+
+.list_project_box {
+    margin-top: 40px;
+}
+
+.project_box {
+    margin-top: 50px;
+}
+}
