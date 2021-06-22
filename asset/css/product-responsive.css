@@ -4,11 +4,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+    #app-service h3.white, #app-service .home-title {
+        margin-bottom: 0px !important;
+    }
+
     .display-1 > div {
         margin: 0px !important;
         width: 75px;
         margin-left: 10px !important;
     }
+
     .form-group.display-1 {
         display: flex !important;
     }
@@ -207,6 +212,9 @@
 
 /* iPad landscape style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    #app-service h3.white, #app-service .home-title {
+        margin-bottom: 0px !important;
+    }
     section#detail-header {
         margin-top: 64px;
     }
@@ -224,6 +232,10 @@
 
 /* iPad portrait style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    #app-service h3.white, #app-service .home-title {
+        margin-bottom: 0px !important;
+    }
+
     section#detail-header {
         margin-top: 64px;
     }

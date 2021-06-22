@@ -9,6 +9,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    #sm_menu_ham {
+        top: 15px !important;
+    }
+
     .sm_menu_outer.active {
         opacity: 1;
         z-index: 99999;
@@ -98,7 +102,7 @@
         left: 0px;
         height: 5px;
         background: #e37467;
-        bottom: -18px;
+        bottom: -25px;
     }
 
     .app_header ul li.active a:before, .app_header ul li a:hover:before {
@@ -106,12 +110,12 @@
     }
 
     .pc-04-item .pc-04-link {
-        text-align: left;
+        text-align: right;
         margin-top: 20px;
     }
 
     .pc-04-item .pc-04-link-2 {
-        text-align: left;
+        text-align: right;
         margin-top: 10px;
     }
 
@@ -127,9 +131,14 @@
 
 /* iPad landscape style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    #sm_menu_ham {
+        top: 15px !important;
+    }
+
     .chart-list {
         margin-top: 30px;
     }
+
     #sm_menu_ham {
         display: none;
     }
@@ -150,6 +159,10 @@
 
 /* iPad portrait style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    #sm_menu_ham {
+        top: 15px;
+    }
+
     .chart-list {
         margin-top: 30px;
     }
