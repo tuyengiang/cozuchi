@@ -1,5 +1,11 @@
+
 /**mobile**/
+
 @media only screen and (max-width: 380px) {
+    .apexcharts-canvas {
+        left: -70px !important;
+        top: -20px !important;
+    }
     .app_header ul li a {
         color: #7c7c7c;
         font-size: 11px !important;
