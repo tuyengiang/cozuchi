@@ -143,7 +143,7 @@
 /* iPad landscape style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .note_chart {
-        width: 180px !important;
+        width: 200px !important;
     }
     #sm_menu_ham {
         top: 15px !important;
