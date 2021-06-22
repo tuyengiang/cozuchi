@@ -11,6 +11,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    overflow: hidden;
+}
+
 @font-face {
     src: url("../fonts/NotoSansJP-Bold.otf");
     font-family: "NotoSansJP-Bold", sans-serif;
@@ -173,7 +177,7 @@ a {
     color: #333;
     font-family: "NotoSansJP-Regular", sans-serif;
     font-size: 15px;
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .app-sidebar .app-menu nav.app-menu-container ul li a:hover, .app-sidebar .app-menu nav.app-menu-container ul li.active a {
@@ -451,7 +455,7 @@ select.form-control.tableSelect {
     border-radius: 0px 0px 10px 10px;
     width: 100%;
     display: inline-block;
-	padding-top: 15px;
+    padding-top: 15px;
 }
 
 .chart-tab ul li.active, .chart-tab ul li:hover {
@@ -468,4 +472,9 @@ select.form-control.tableSelect {
 
 .chart-tab ul li:hover a {
     color: #000;
+}
+
+.apexcharts-canvas {
+    left: -80px !important;
+    top: -30px !important;
 }

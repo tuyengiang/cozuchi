@@ -6,9 +6,16 @@
         padding: 0px 15px;
         position: relative;
     }
+
+    .header__mobile {
+        height: 42px !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .header__mobile {
+        height: 42px !important;
+    }
     #sm_menu_ham {
         top: 15px !important;
     }
@@ -160,7 +167,7 @@
 /* iPad portrait style here */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     #sm_menu_ham {
-        top: 15px;
+        top: 15px !important;
     }
 
     .chart-list {
@@ -179,10 +186,16 @@
         overflow-x: auto;
         white-space: nowrap;
     }
+    .header__mobile {
+        height: 42px !important;
+    }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) {
     #sm_menu_ham {
         display: none;
+    }
+    .header__mobile {
+        height: 42px !important;
     }
 }
