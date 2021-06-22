@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca893069-b7bf-4a99-8418-65de3377032e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC-mypage-01.html" beforeDir="false" afterPath="$PROJECT_DIR$/PC-mypage-01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/responsive.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/asset/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="184" column="23" selection-end-line="200" selection-end-column="1" />
+            <state relative-caret-position="506">
+              <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -59,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="652">
@@ -195,9 +193,9 @@
         <option value="$PROJECT_DIR$/asset/css/product.css" />
         <option value="$PROJECT_DIR$/PC-detail-all.html" />
         <option value="$PROJECT_DIR$/asset/css/product-responsive.css" />
-        <option value="$PROJECT_DIR$/asset/css/responsive.css" />
         <option value="$PROJECT_DIR$/PC-mypage-01.html" />
         <option value="$PROJECT_DIR$/asset/css/main.css" />
+        <option value="$PROJECT_DIR$/asset/css/responsive.css" />
       </list>
     </option>
   </component>
@@ -286,7 +284,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33027000" />
+    <option name="totallyTimeSpent" value="33250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="0" />
@@ -483,13 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asset/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="184" column="23" selection-end-line="200" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PC-mypage-01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="652">
@@ -501,6 +492,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="652">
           <caret line="479" column="1" selection-start-line="479" selection-start-column="1" selection-end-line="479" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
         </state>
       </provider>
     </entry>
