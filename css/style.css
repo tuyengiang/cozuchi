@@ -1,23 +1,22 @@
 @font-face {
-    font-family: 'NotoSans';
+    font-family: 'NotoSansJP-Regular';
     src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf);
-    font-weight: 400;
     font-style: normal;
     font-display: swap
 }
 
 @font-face {
-    font-family: 'NotoSans';
-    src: url(../fonts/Noto_Sans/NotoSans-SemiBold.ttf);
-    font-weight: 600;
+    font-family: 'NotoSansJP-Medium';
+    src: url(../asset/fonts/NotoSansJP-Medium.otf);
+   
     font-style: normal;
     font-display: swap
 }
 
 @font-face {
-    font-family: 'NotoSans';
+    font-family: 'NotoSansJP-Bold';
     src: url(../fonts/Noto_Sans/NotoSans-Bold.ttf);
-    font-weight: 700;
+    
     font-style: normal;
     font-display: swap
 }
@@ -29,13 +28,16 @@
     --main-bg-color-2: #fff5f4;
     --color-body: #000;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "NotoSansJP-Bold", sans-serif;
+}
 .h3, .h4, .h5, .h6,h3, h4, h5, h6{
     line-height: 1.5;
 }
 body {
     font-size: 16px;
     color: #000;
-    font-family: 'NotoSans', sans-serif;
+    font-family: 'NotoSansJP-Regular', sans-serif;
     overflow-x: hidden
 }
 
@@ -172,7 +174,12 @@ a:hover {
 .semi_bold {
     font-weight: 600 !important;
 }
-
+.font-bold{
+    font-family: "NotoSansJP-Bold", sans-serif;
+}
+.font-medium{
+    font-family: "NotoSansJP-Medium", sans-serif;
+}
 .border-bottom-ddd {
     border-bottom: 1px solid #ddd;
 }
@@ -216,7 +223,15 @@ a:hover {
     background-color: #fff;
     padding-bottom: 20px;
 }
-
+.item_body .total{
+    font-family: "NotoSansJP-Bold", sans-serif;
+}
+.item_body .total .size14{
+    font-family: "NotoSansJP-Medium", sans-serif;
+}
+.note_chart p .size36{
+    font-family: "NotoSansJP-Bold", sans-serif;
+}
 .type_item {
     border-radius: 5px;
     font-size: 11px;
@@ -279,6 +294,7 @@ a:hover {
     margin-top: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid #ddd;
+    font-family: "NotoSansJP-Medium", sans-serif;
 }
 
 .date_box {
@@ -380,6 +396,7 @@ a:hover {
     max-width: 840px;
     font-size: 34px;
     font-weight: bold;
+    font-family: "NotoSansJP-Bold", sans-serif;
     text-align: left;
     margin-bottom: 65px;
 }
@@ -433,6 +450,7 @@ a:hover {
     text-align: center;
     transition: all 0.3s ease-out;
     padding: 0;
+    font-family: "NotoSansJP-Bold", sans-serif;
 }
 
 .btn_main:hover,
@@ -757,11 +775,15 @@ a:hover {
     width: 100%;
     max-width: 480px;
     margin: 0 auto;
+    font-family: "NotoSansJP-Bold", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .voice_item .author {
     font-size: 18px;
     font-weight: bold;
+    font-family: "NotoSansJP-Bold", sans-serif;
 }
 
 .voice_item {
@@ -873,6 +895,7 @@ a:hover {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 40px;
+    font-family: "NotoSansJP-Bold", sans-serif;
 }
 
 .company_infor .box p {
@@ -898,6 +921,7 @@ a:hover {
     border-radius: 5px;
     border: 2px solid;
     width: 200px;
+    font-family: "NotoSansJP-Medium", sans-serif;
 }
 
 .website_url:hover,
@@ -1083,10 +1107,12 @@ a:hover {
 }
 
 .submit_form label {
-    font-weight: 600;
     margin-bottom: 10px;
+    font-family: "NotoSansJP-Medium", sans-serif;
 }
-
+.note_login{
+    font-family: "NotoSansJP-Medium", sans-serif;
+}
 .submit_form .form-group {
     margin-bottom: 30px;
 }
@@ -1109,8 +1135,12 @@ a:hover {
     padding-top: 0;
     padding-bottom: 0;
     width: 320px;
+    font-family: "NotoSansJP-Bold", sans-serif;
+    font-weight: bold;
 }
-
+.other_box_regist{
+    font-family: "NotoSansJP-Medium", sans-serif;
+}
 .btn_submit:hover,
 .btn_submit:focus {
     color: #fff;
@@ -1120,10 +1150,12 @@ a:hover {
 .submit_form a:focus {
     color: var(--main-color);
 }
-
+.policy{
+    font-family: "NotoSansJP-Medium", sans-serif;
+}
 .submit_form a {
     position: relative;
-    font-weight: 600;
+    
 }
 
 .submit_form a:before {
@@ -1221,7 +1253,7 @@ h4.panel-title {
         width: 300px;
         height: 60px;
         line-height: 60px;
-        font-size: 18px;
+        font-size: 20px;
     }
     .submit.mt-5 {
         margin-top: 30px !important;
@@ -1366,7 +1398,7 @@ h4.panel-title {
         font-size: 18px;
         height: 75px;
         line-height: 75px;
-        max-width: 352px;
+        max-width: 370px;
     }
     .voice_box {
         margin-top: 70px;
